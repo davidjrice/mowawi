@@ -1,0 +1,138 @@
+body{
+  background: url(/images/background_light.png);
+  background-color: #000;
+}
+
+div#header{
+  background-color: #000;
+  border-bottom:5px solid #990000;
+  color: #fff;
+  position:relative;
+  padding:20px 0 0 20px;
+}
+
+#header h1 a{ 
+ display:block;
+ width: 300px; height: 72px; 
+ background-image: url(/images/mowawi.png); 
+ background-repeat: no-repeat; 
+}
+
+#header h1 a span{
+  display:none;
+}
+
+#header p{
+  margin:0 0 0 5px;
+}
+div#login {
+  border: 2px solid #fff;
+  width:300px;
+  position:absolute;
+  right:20px;
+  top:20px;
+  padding:5px;
+  font-size:smaller;
+}
+
+div#login img{
+  float:left;
+  margin-right:5px;
+}
+
+div#login p{
+  margin:0;
+}
+
+div#page{
+  text-align:center;
+  margin:30px;
+}
+
+div#content{
+  text-align:left;
+  margin:0 auto;
+  width:800px;
+}
+h2 span{
+  font-size:small;
+}
+
+div#flash{
+  background-color: #990000;
+  text-align:center;
+  font-weight:bold;
+  color:#fff;
+  padding-bottom:5px;
+}
+
+a, a:visited{
+  color: #990000;
+}
+/* 
+=Intro text
+*/
+p#intro{
+  border:3px solid #990000;
+  background:#fff;
+  padding:10px;
+  font-size:larger;
+}
+
+p#intro span{
+  font-style:italic;
+}
+
+/* 
+=Form Styles
+*/
+form ol{
+
+}
+
+form li span{
+  padding-left:20px;
+  font-size:small;
+  color:#990000;
+}
+ 
+form legend { 
+  padding-left: 0;
+  padding-right:5px;
+}
+  
+form fieldset {
+}
+
+form li label {
+ padding:0;
+ margin:0;
+ clear:both;
+}
+
+
+form input,form textarea {
+  width:100%;
+  font-size:24px;
+  margin:4px 0 20px 0;
+}
+
+form select {
+  margin:4px 0 20px 0;
+}
+
+form input[type=submit], 
+form input[type=radio],
+form input[type=checkbox],
+form input[type=file]{
+  font-size:inherit;
+  width:auto;
+}
+
+input#openid_url {
+   background: url(http://openid.net/login-bg.gif) no-repeat;
+   background-color: #fff;
+   background-position: 0 50%;
+   color: #000;
+   padding-left: 18px;
+}

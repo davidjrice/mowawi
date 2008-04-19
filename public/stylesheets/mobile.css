@@ -1,0 +1,8 @@
+.notmobile {display:none !important}
+
+body {font-family:sans-serif}
+#page {max-width:420px;min-width:176px}
+.nav {clear:both;list-style-image:none;list-style-position:outside;list-style-type:none;margin:1px 0pt;padding:0}
+.nav li {width:50%;float:left}
+.nav li a {display:block;padding:0 5px;border-bottom:1px solid white;border-left:3px solid white}
+.nav li strong a {border-left:3px solid lime}

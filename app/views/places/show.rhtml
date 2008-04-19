@@ -1,0 +1,43 @@
+<%- content_for :header do -%>
+  <%- if @map -%>
+  <%= GMap.header %>
+  <%= @map.to_html %>
+  <%- end -%>
+<%- end -%>
+<h2><%= h @place.title %> 
+    <span><%= link_to '(edit)', edit_place_path(@place) %></span>
+    <%- if admin_logged_in? -%>
+    <span><%= link_to '(destroy)', place_path(@place), :method => :delete %></span>
+    <%- end -%>
+</h2>
+<p class="description"><%= h @place.description %></p>
+
+<h3>Photos of <%= @place.title %></h3>
+<%- if @photos.size > 0 -%>
+<ul>
+<%- @photos.each do |photo| -%>
+  <li><%= link_to image_tag(photo.public_filename(:thumb)), photo.public_filename %></li>
+<%- end -%>
+</ul>
+<p><%= link_to "Upload some more.", new_photo_path(@place) %>
+<%- else -%>
+<p>There are no photos yet, <%= link_to "upload some!", new_photo_path(@place) %></p>
+<%- end # Photos -%>
+
+
+<%- if @map -%>
+<%= @map.div(:width => 600, :height => 400) %>   
+<%- end -%>
+
+<h3>Other places within 5 Km of <%= h @place.title %></h3>
+<%- if @nearby.size > 0 -%>
+<ul>
+<%- @nearby.each do |nearby_place| -%>
+  <li><%= link_to display_place_with_distance(nearby_place), place_path(nearby_place) %></li>
+<%- end -%>
+</ul>  
+<%- else -%>
+<p>There's nowhere nearby</p>
+<%- end -%>
+
+<p><%= link_to 'Back to list of places', places_path %></p>

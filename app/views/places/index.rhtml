@@ -1,0 +1,22 @@
+<h2>Recent Places</h2>
+<%- if logged_in? -%>
+<p><%= link_to 'Add a new Place', new_place_path %></p>
+<%- else -%>
+<p>You need to be <%= link_to "logged in", new_session_path %> to add places</p>
+<%- end -%>
+
+<ul>
+<% for place in @places %>
+<%= render :partial => 'place', :object => place %>
+<% end %>
+</ul>
+<br />
+<%= will_paginate @places %>
+
+
+
+<h3>Search</h3>
+<% ordered_list_form_for(:search, :url => search_places_path) do |f| %>
+  <%= f.text_field :query, :label => "What are you looking for?" %>
+  <li><%= submit_tag "Search" %></li>
+<% end %>

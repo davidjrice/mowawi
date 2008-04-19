@@ -1,0 +1,1547 @@
+# Logfile created on Wed Sep 12 19:38:02 +0100 2007 by logger.rb/1.5.2.9
+
+
+Processing ApplicationController#new (for 127.0.0.1 at 2007-09-13 02:02:54) [GET]
+  Session ID: e5ffc10d688a5879b011ea235400f62b
+  Parameters: {"action"=>"new", "controller"=>"session"}
+
+
+SyntaxError (./script/../config/../app/controllers/session_controller.rb:61: parse error, unexpected '{', expecting kTHEN or ':' or '\n' or ';'
+    if !self.current_user.login.nil? && self.current_user.login == "demo" { self.current_user.update_attribute(:read_intro,false) }
+                                                                           ^
+./script/../config/../app/controllers/session_controller.rb:61: parse error, unexpected '}', expecting kEND):
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:203:in `load_without_new_constant_marking'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:203:in `load_file'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:202:in `load_file'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:94:in `require_or_load'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:248:in `load_missing_constant'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:452:in `const_missing'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:464:in `const_missing'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/inflector.rb:250:in `constantize'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/core_ext/string/inflections.rb:148:in `constantize'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/routing.rb:1284:in `recognize'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/dispatcher.rb:40:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:78:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `synchronize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:618:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `each'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `initialize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `new'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `initialize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `new'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:271:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `each'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:127:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/command.rb:211:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:243
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:488:in `load'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:488:in `load'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:488:in `load'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/commands/servers/mongrel.rb:60
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:495:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:495:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/commands/server.rb:39
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+
+Rendering /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/templates/rescues/layout.rhtml (500 Internal Error)
+SessionController: missing default helper path session_helper
+
+
+Processing SessionController#new (for 127.0.0.1 at 2007-09-13 02:03:15) [GET]
+  Session ID: e5ffc10d688a5879b011ea235400f62b
+  Parameters: {"action"=>"new", "controller"=>"session"}
+Rendering  within layouts/mowawi
+Rendering session/new
+Completed in 0.00812 (123 reqs/sec) | Rendering: 0.00709 (87%) | 200 OK [http://0.0.0.0/session/new]
+SessionController: missing default helper path session_helper
+
+
+Processing SessionController#new (for 127.0.0.1 at 2007-09-13 02:03:19) [GET]
+  Session ID: e5ffc10d688a5879b011ea235400f62b
+  Parameters: {"action"=>"new", "controller"=>"session"}
+Rendering  within layouts/mowawi
+Rendering session/new
+Completed in 0.00345 (290 reqs/sec) | Rendering: 0.00237 (68%) | 200 OK [http://0.0.0.0/session/new]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2007-09-13 02:03:22) [GET]
+  Session ID: e5ffc10d688a5879b011ea235400f62b
+  Parameters: {"action"=>"new", "controller"=>"users"}
+  [4;36;1mSQL (0.000173)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mUser Columns (0.004709)[0m   [0mSHOW FIELDS FROM users[0m
+Rendering  within layouts/mowawi
+Rendering users/new
+Rendered users/_form (0.00301)
+Completed in 0.07924 (12 reqs/sec) | Rendering: 0.00737 (9%) | DB: 0.00488 (6%) | 200 OK [http://0.0.0.0/users/new]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2007-09-13 02:03:23) [GET]
+  Session ID: e5ffc10d688a5879b011ea235400f62b
+  Parameters: {"action"=>"new", "controller"=>"users"}
+  [4;36;1mUser Columns (0.005145)[0m   [0;1mSHOW FIELDS FROM users[0m
+Rendering  within layouts/mowawi
+Rendering users/new
+Rendered users/_form (0.00211)
+Completed in 0.02984 (33 reqs/sec) | Rendering: 0.00529 (17%) | DB: 0.00515 (17%) | 200 OK [http://0.0.0.0/users/new]
+SessionController: missing default helper path session_helper
+
+
+Processing SessionController#new (for 127.0.0.1 at 2007-09-13 02:03:25) [GET]
+  Session ID: e5ffc10d688a5879b011ea235400f62b
+  Parameters: {"action"=>"new", "controller"=>"session"}
+Rendering  within layouts/mowawi
+Rendering session/new
+Completed in 0.00376 (266 reqs/sec) | Rendering: 0.00270 (72%) | DB: 0.00000 (0%) | 200 OK [http://0.0.0.0/session/new]
+SessionController: missing default helper path session_helper
+
+
+Processing SessionController#new (for 127.0.0.1 at 2007-09-13 02:03:25) [GET]
+  Session ID: e5ffc10d688a5879b011ea235400f62b
+  Parameters: {"action"=>"new", "controller"=>"session"}
+Rendering  within layouts/mowawi
+Rendering session/new
+Completed in 0.00447 (223 reqs/sec) | Rendering: 0.00299 (66%) | DB: 0.00000 (0%) | 200 OK [http://0.0.0.0/session/new]
+SessionController: missing default helper path session_helper
+
+
+Processing SessionController#create (for 127.0.0.1 at 2007-09-13 02:03:30) [POST]
+  Session ID: e5ffc10d688a5879b011ea235400f62b
+  Parameters: {"commit"=>"Log in", "openid_url"=>"", "action"=>"create", "method"=>:get, "controller"=>"session", "login"=>"demo", "password"=>"demo"}
+  [4;35;1mUser Columns (0.004636)[0m   [0mSHOW FIELDS FROM users[0m
+  [4;36;1mUser Load (0.001384)[0m   [0;1mSELECT * FROM users WHERE (users.`login` = 'demo') LIMIT 1[0m
+  [4;35;1mSQL (0.000159)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.000391)[0m   [0;1mUPDATE users SET `created_at` = '2007-09-12 18:45:18', `login` = 'demo', `crypted_password` = 'fa10ad173eac3ae13a072ab35bf219aaf4880b38', `remember_token_expires_at` = NULL, `salt` = '75072eb8e0dbd86f382bbe880c50b3995c3678c2', `admin` = 0, `remember_token` = NULL, `identity_url` = NULL, `read_intro` = 0, `last_login_at` = NULL, `email` = 'demo@demo.com', `visits_count` = 0, `updated_at` = '2007-09-13 02:03:30' WHERE `id` = 4[0m
+  [4;35;1mSQL (0.000791)[0m   [0mCOMMIT[0m
+Redirected to http://0.0.0.0:3001/
+Completed in 0.02936 (34 reqs/sec) | DB: 0.00736 (25%) | 302 Found [http://0.0.0.0/session]
+
+
+Processing PlacesController#index (for 127.0.0.1 at 2007-09-13 02:03:30) [GET]
+  Session ID: e5ffc10d688a5879b011ea235400f62b
+  Parameters: {"action"=>"index", "controller"=>"places"}
+  [4;36;1mPlace Columns (0.002814)[0m   [0;1mSHOW FIELDS FROM places[0m
+  [4;35;1mSQL (0.000342)[0m   [0mSELECT count(*) AS count_all FROM places [0m
+  [4;36;1mPlace Load (0.000996)[0m   [0;1mSELECT * FROM places ORDER BY created_at DESC LIMIT 0, 30[0m
+Rendering actionindexlayoutfalsecontent_typetext/html within layouts/mowawi
+Rendering places/index
+  [4;35;1mUser Columns (0.003147)[0m   [0mSHOW FIELDS FROM users[0m
+  [4;36;1mUser Load (0.001121)[0m   [0;1mSELECT * FROM users WHERE (users.`id` = 4) LIMIT 1[0m
+Rendered places/_place (0.00213)
+Rendered places/_place (0.00055)
+Rendered places/_place (0.00018)
+Rendered places/_place (0.00138)
+Rendered places/_place (0.00022)
+
+
+ActionView::TemplateError (undefined local variable or method `destroy_session_path' for #<#<Class:0x345498c>:0x3454964>) on line #19 of app/views/layouts/mowawi.rhtml:
+16:     <% if logged_in? %>
+17:       <%= gravatar_for current_user %>
+18:       <p>Logged in as <%= link_to current_user.login, user_path(current_user) %></p>
+19:       <p><%= link_to "Logout", destroy_session_path, :method => :delete %></p>
+20:     <% else %>
+21:       <p>You are not logged in!</p>
+22:       <p><%= link_to "Login", new_session_path %> or <%= link_to "Signup", new_user_path %></p>
+
+    #{RAILS_ROOT}/app/views/layouts/mowawi.rhtml:19:in `_run_rhtml_47app47views47layouts47mowawi46rhtml'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_view/base.rb:326:in `send'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_view/base.rb:326:in `compile_and_render_template'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_view/base.rb:301:in `render_template'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_view/base.rb:260:in `render_file'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/layout.rb:254:in `render_without_benchmark'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/benchmarking.rb:50:in `render'
+    /usr/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/benchmarking.rb:50:in `render'
+    app/controllers/places_controller.rb:24:in `index'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/mime_responds.rb:167:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/mime_responds.rb:167:in `respond'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/mime_responds.rb:161:in `each'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/mime_responds.rb:161:in `respond'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/mime_responds.rb:105:in `respond_to'
+    app/controllers/places_controller.rb:24:in `index'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:1095:in `send'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:1095:in `perform_action_without_filters'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:632:in `call_filter'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:634:in `call_filter'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:638:in `call_filter'
+    app/controllers/application.rb:27:in `catch_errors'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:456:in `send'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:456:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:637:in `call_filter'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:638:in `call_filter'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:438:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:637:in `call_filter'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:619:in `perform_action_without_benchmark'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/rescue.rb:83:in `perform_action'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:430:in `send'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:430:in `process_without_filters'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:624:in `process_without_session_management_support'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/session_management.rb:114:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:330:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/dispatcher.rb:41:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:78:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `synchronize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:618:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `each'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `initialize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `new'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `initialize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `new'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:271:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `each'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:127:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/command.rb:211:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:243
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:488:in `load'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:488:in `load'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:488:in `load'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/commands/servers/mongrel.rb:60
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:495:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:495:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/commands/server.rb:39
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+
+Rendering /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/templates/rescues/layout.rhtml (500 Internal Error)
+
+
+Processing PlacesController#index (for 127.0.0.1 at 2007-09-13 02:03:40) [GET]
+  Session ID: e5ffc10d688a5879b011ea235400f62b
+  Parameters: {"action"=>"index", "controller"=>"places"}
+  [4;35;1mPlace Columns (0.003064)[0m   [0mSHOW FIELDS FROM places[0m
+  [4;36;1mSQL (0.000454)[0m   [0;1mSELECT count(*) AS count_all FROM places [0m
+  [4;35;1mPlace Load (0.001343)[0m   [0mSELECT * FROM places ORDER BY created_at DESC LIMIT 0, 30[0m
+Rendering actionindexlayoutfalsecontent_typetext/html within layouts/mowawi
+Rendering places/index
+  [4;36;1mUser Columns (0.005413)[0m   [0;1mSHOW FIELDS FROM users[0m
+  [4;35;1mUser Load (0.001316)[0m   [0mSELECT * FROM users WHERE (users.`id` = 4) LIMIT 1[0m
+Rendered places/_place (0.00201)
+Rendered places/_place (0.00064)
+Rendered places/_place (0.00022)
+Rendered places/_place (0.00157)
+Rendered places/_place (0.00022)
+Completed in 0.15603 (6 reqs/sec) | Rendering: 0.13221 (84%) | DB: 0.01586 (10%) | 200 OK [http://0.0.0.0/]
+SessionController: missing default helper path session_helper
+
+
+Processing SessionController#create (for 127.0.0.1 at 2007-09-13 02:03:44) [DELETE]
+  Session ID: e5ffc10d688a5879b011ea235400f62b
+  Parameters: {"_method"=>"delete", "action"=>"create", "method"=>:get, "controller"=>"session"}
+  [4;36;1mUser Columns (0.002894)[0m   [0;1mSHOW FIELDS FROM users[0m
+  [4;35;1mUser Load (0.001474)[0m   [0mSELECT * FROM users WHERE (users.`login` IS NULL) LIMIT 1[0m
+Rendering actionnewlayoutfalse within layouts/mowawi
+Rendering session/new
+Completed in 0.02781 (35 reqs/sec) | Rendering: 0.00250 (9%) | DB: 0.00437 (15%) | 200 OK [http://0.0.0.0/session]
+SessionController: missing default helper path session_helper
+
+
+Processing SessionController#create (for 127.0.0.1 at 2007-09-13 02:04:46) [DELETE]
+  Session ID: e5ffc10d688a5879b011ea235400f62b
+  Parameters: {"_method"=>"delete", "action"=>"create", "method"=>:get, "controller"=>"session"}
+  [4;36;1mUser Columns (0.004407)[0m   [0;1mSHOW FIELDS FROM users[0m
+  [4;35;1mUser Load (0.002548)[0m   [0mSELECT * FROM users WHERE (users.`login` IS NULL) LIMIT 1[0m
+Rendering actionnewlayoutfalse within layouts/mowawi
+Rendering session/new
+Completed in 0.04011 (24 reqs/sec) | Rendering: 0.00620 (15%) | DB: 0.00695 (17%) | 200 OK [http://0.0.0.0/session]
+SessionController: missing default helper path session_helper
+
+
+Processing SessionController#new (for 127.0.0.1 at 2007-09-13 02:04:49) [GET]
+  Session ID: e5ffc10d688a5879b011ea235400f62b
+  Parameters: {"action"=>"new", "controller"=>"session"}
+Rendering  within layouts/mowawi
+Rendering session/new
+Completed in 0.00416 (240 reqs/sec) | Rendering: 0.00303 (72%) | DB: 0.00000 (0%) | 200 OK [http://0.0.0.0/session/new]
+SessionController: missing default helper path session_helper
+
+
+Processing SessionController#create (for 127.0.0.1 at 2007-09-13 02:04:54) [POST]
+  Session ID: e5ffc10d688a5879b011ea235400f62b
+  Parameters: {"commit"=>"Log in", "openid_url"=>"", "action"=>"create", "method"=>:get, "controller"=>"session", "login"=>"demo", "password"=>"demo"}
+  [4;36;1mUser Columns (0.003164)[0m   [0;1mSHOW FIELDS FROM users[0m
+  [4;35;1mUser Load (0.001020)[0m   [0mSELECT * FROM users WHERE (users.`login` = 'demo') LIMIT 1[0m
+  [4;36;1mSQL (0.000146)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.000348)[0m   [0mUPDATE users SET `created_at` = '2007-09-12 18:45:18', `login` = 'demo', `crypted_password` = 'fa10ad173eac3ae13a072ab35bf219aaf4880b38', `remember_token_expires_at` = NULL, `salt` = '75072eb8e0dbd86f382bbe880c50b3995c3678c2', `admin` = 0, `remember_token` = NULL, `identity_url` = NULL, `read_intro` = 0, `last_login_at` = NULL, `email` = 'demo@demo.com', `visits_count` = 0, `updated_at` = '2007-09-13 02:04:54' WHERE `id` = 4[0m
+  [4;36;1mSQL (0.000839)[0m   [0;1mCOMMIT[0m
+Redirected to http://0.0.0.0:3001/
+Completed in 0.10668 (9 reqs/sec) | DB: 0.00552 (5%) | 302 Found [http://0.0.0.0/session]
+
+
+Processing PlacesController#index (for 127.0.0.1 at 2007-09-13 02:04:55) [GET]
+  Session ID: e5ffc10d688a5879b011ea235400f62b
+  Parameters: {"action"=>"index", "controller"=>"places"}
+  [4;35;1mPlace Columns (0.011312)[0m   [0mSHOW FIELDS FROM places[0m
+  [4;36;1mSQL (0.002066)[0m   [0;1mSELECT count(*) AS count_all FROM places [0m
+  [4;35;1mPlace Load (0.001610)[0m   [0mSELECT * FROM places ORDER BY created_at DESC LIMIT 0, 30[0m
+Rendering actionindexlayoutfalsecontent_typetext/html within layouts/mowawi
+Rendering places/index
+  [4;36;1mUser Columns (0.003292)[0m   [0;1mSHOW FIELDS FROM users[0m
+  [4;35;1mUser Load (0.003246)[0m   [0mSELECT * FROM users WHERE (users.`id` = 4) LIMIT 1[0m
+Rendered places/_place (0.00284)
+Rendered places/_place (0.00067)
+Rendered places/_place (0.00021)
+Rendered places/_place (0.00126)
+Rendered places/_place (0.00025)
+Completed in 0.07283 (13 reqs/sec) | Rendering: 0.03741 (51%) | DB: 0.02153 (29%) | 200 OK [http://0.0.0.0/]
+SessionController: missing default helper path session_helper
+
+
+Processing SessionController#destroy (for 127.0.0.1 at 2007-09-13 02:04:57) [DELETE]
+  Session ID: e5ffc10d688a5879b011ea235400f62b
+  Parameters: {"_method"=>"delete", "action"=>"destroy", "controller"=>"session"}
+  [4;36;1mUser Columns (0.002992)[0m   [0;1mSHOW FIELDS FROM users[0m
+  [4;35;1mUser Load (0.001082)[0m   [0mSELECT * FROM users WHERE (users.`id` = 4) LIMIT 1[0m
+  [4;36;1mSQL (0.000152)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.000350)[0m   [0mUPDATE users SET `created_at` = '2007-09-12 18:45:18', `login` = 'demo', `crypted_password` = 'fa10ad173eac3ae13a072ab35bf219aaf4880b38', `remember_token_expires_at` = NULL, `salt` = '75072eb8e0dbd86f382bbe880c50b3995c3678c2', `admin` = 0, `remember_token` = NULL, `identity_url` = NULL, `read_intro` = 0, `last_login_at` = NULL, `email` = 'demo@demo.com', `visits_count` = 0, `updated_at` = '2007-09-13 02:04:57' WHERE `id` = 4[0m
+  [4;36;1mSQL (0.000905)[0m   [0;1mCOMMIT[0m
+Cookie set: auth_token=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+Redirected to http://0.0.0.0:3001/
+Completed in 0.03377 (29 reqs/sec) | DB: 0.00548 (16%) | 302 Found [http://0.0.0.0/logout]
+
+
+Processing PlacesController#index (for 127.0.0.1 at 2007-09-13 02:04:57) [GET]
+  Session ID: 2222d75efe9215120f15cae38d856470
+  Parameters: {"action"=>"index", "controller"=>"places"}
+  [4;35;1mPlace Columns (0.002944)[0m   [0mSHOW FIELDS FROM places[0m
+  [4;36;1mSQL (0.000406)[0m   [0;1mSELECT count(*) AS count_all FROM places [0m
+  [4;35;1mPlace Load (0.001279)[0m   [0mSELECT * FROM places ORDER BY created_at DESC LIMIT 0, 30[0m
+Rendering actionindexlayoutfalsecontent_typetext/html within layouts/mowawi
+Rendering places/index
+Rendered places/_place (0.00185)
+Rendered places/_place (0.00080)
+Rendered places/_place (0.00025)
+Rendered places/_place (0.00170)
+Rendered places/_place (0.00037)
+Completed in 0.02679 (37 reqs/sec) | Rendering: 0.00989 (36%) | DB: 0.00463 (17%) | 200 OK [http://0.0.0.0/]
+SessionController: missing default helper path session_helper
+
+
+Processing SessionController#new (for 127.0.0.1 at 2007-09-13 02:05:00) [GET]
+  Session ID: 2222d75efe9215120f15cae38d856470
+  Parameters: {"action"=>"new", "controller"=>"session"}
+Rendering  within layouts/mowawi
+Rendering session/new
+Completed in 0.00414 (241 reqs/sec) | Rendering: 0.00299 (72%) | DB: 0.00000 (0%) | 200 OK [http://0.0.0.0/session/new]
+SessionController: missing default helper path session_helper
+
+
+Processing SessionController#create (for 127.0.0.1 at 2007-09-13 02:05:06) [POST]
+  Session ID: 2222d75efe9215120f15cae38d856470
+  Parameters: {"commit"=>"Log in", "openid_url"=>"", "action"=>"create", "method"=>:get, "controller"=>"session", "login"=>"demo", "password"=>"demo"}
+  [4;36;1mUser Columns (0.003745)[0m   [0;1mSHOW FIELDS FROM users[0m
+  [4;35;1mUser Load (0.003243)[0m   [0mSELECT * FROM users WHERE (users.`login` = 'demo') LIMIT 1[0m
+  [4;36;1mSQL (0.000200)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.000374)[0m   [0mUPDATE users SET `created_at` = '2007-09-12 18:45:18', `login` = 'demo', `crypted_password` = 'fa10ad173eac3ae13a072ab35bf219aaf4880b38', `remember_token_expires_at` = NULL, `salt` = '75072eb8e0dbd86f382bbe880c50b3995c3678c2', `admin` = 0, `remember_token` = NULL, `identity_url` = NULL, `read_intro` = 0, `last_login_at` = NULL, `email` = 'demo@demo.com', `visits_count` = 0, `updated_at` = '2007-09-13 02:05:06' WHERE `id` = 4[0m
+  [4;36;1mSQL (0.000789)[0m   [0;1mCOMMIT[0m
+Redirected to http://0.0.0.0:3001/
+Completed in 0.03192 (31 reqs/sec) | DB: 0.00835 (26%) | 302 Found [http://0.0.0.0/session]
+
+
+Processing PlacesController#index (for 127.0.0.1 at 2007-09-13 02:05:07) [GET]
+  Session ID: 2222d75efe9215120f15cae38d856470
+  Parameters: {"action"=>"index", "controller"=>"places"}
+  [4;35;1mPlace Columns (0.002928)[0m   [0mSHOW FIELDS FROM places[0m
+  [4;36;1mSQL (0.000338)[0m   [0;1mSELECT count(*) AS count_all FROM places [0m
+  [4;35;1mPlace Load (0.001039)[0m   [0mSELECT * FROM places ORDER BY created_at DESC LIMIT 0, 30[0m
+Rendering actionindexlayoutfalsecontent_typetext/html within layouts/mowawi
+Rendering places/index
+  [4;36;1mUser Columns (0.004214)[0m   [0;1mSHOW FIELDS FROM users[0m
+  [4;35;1mUser Load (0.001170)[0m   [0mSELECT * FROM users WHERE (users.`id` = 4) LIMIT 1[0m
+Rendered places/_place (0.00160)
+Rendered places/_place (0.00053)
+Rendered places/_place (0.00019)
+Rendered places/_place (0.00121)
+Rendered places/_place (0.00019)
+Completed in 0.04735 (21 reqs/sec) | Rendering: 0.02753 (58%) | DB: 0.00969 (20%) | 200 OK [http://0.0.0.0/]
+
+
+Processing UsersController#read_intro (for 127.0.0.1 at 2007-09-13 02:05:12) [GET]
+  Session ID: 2222d75efe9215120f15cae38d856470
+  Parameters: {"action"=>"read_intro", "controller"=>"users"}
+  [4;36;1mUser Columns (0.003891)[0m   [0;1mSHOW FIELDS FROM users[0m
+  [4;35;1mUser Load (0.001422)[0m   [0mSELECT * FROM users WHERE (users.`id` = 4) LIMIT 1[0m
+  [4;36;1mSQL (0.000194)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.000413)[0m   [0mUPDATE users SET `created_at` = '2007-09-12 18:45:18', `login` = 'demo', `crypted_password` = 'fa10ad173eac3ae13a072ab35bf219aaf4880b38', `remember_token_expires_at` = NULL, `salt` = '75072eb8e0dbd86f382bbe880c50b3995c3678c2', `admin` = 0, `remember_token` = NULL, `identity_url` = NULL, `read_intro` = 1, `last_login_at` = NULL, `email` = 'demo@demo.com', `visits_count` = 0, `updated_at` = '2007-09-13 02:05:12' WHERE `id` = 4[0m
+  [4;36;1mSQL (0.000860)[0m   [0;1mCOMMIT[0m
+Completed in 0.03284 (30 reqs/sec) | Rendering: 0.00007 (0%) | DB: 0.00678 (20%) | 200 OK [http://0.0.0.0/users/read_intro]
+
+
+Processing PlacesController#show (for 127.0.0.1 at 2007-09-13 02:05:15) [GET]
+  Session ID: 2222d75efe9215120f15cae38d856470
+  Parameters: {"action"=>"show", "id"=>"4-banana", "controller"=>"places"}
+  [4;35;1mPlace Columns (0.002723)[0m   [0mSHOW FIELDS FROM places[0m
+  [4;36;1mPlace Load (0.000807)[0m   [0;1mSELECT * FROM places WHERE (places.`id` = 4) [0m
+  [4;35;1mPlace Load (0.001049)[0m   [0mSELECT *, (ACOS(COS(0.0)*COS(0.0)*COS(RADIANS(places.lat))*COS(RADIANS(places.lng))+
+ COS(0.0)*SIN(0.0)*COS(RADIANS(places.lat))*SIN(RADIANS(places.lng))+
+ SIN(0.0)*SIN(RADIANS(places.lat)))*6376.77271)
+ AS distance FROM places WHERE (places.lat>-0.044925373789183 AND places.lat<0.044925373789183 AND places.lng>-0.044925373789183 AND places.lng<0.044925373789183 AND (ACOS(COS(0.0)*COS(0.0)*COS(RADIANS(places.lat))*COS(RADIANS(places.lng))+
+ COS(0.0)*SIN(0.0)*COS(RADIANS(places.lat))*SIN(RADIANS(places.lng))+
+ SIN(0.0)*SIN(RADIANS(places.lat)))*6376.77271)
+ <= 5) [0m
+  [4;36;1mPhoto Load (0.000954)[0m   [0;1mSELECT * FROM photos WHERE (photos.place_id = 4) [0m
+Rendering actionshowlayoutfalsecontent_typetext/html within layouts/mowawi
+Rendering places/show
+  [4;35;1mUser Columns (0.004608)[0m   [0mSHOW FIELDS FROM users[0m
+  [4;36;1mUser Load (0.001511)[0m   [0;1mSELECT * FROM users WHERE (users.`id` = 4) LIMIT 1[0m
+Completed in 0.19736 (5 reqs/sec) | Rendering: 0.09620 (48%) | DB: 0.01165 (5%) | 200 OK [http://0.0.0.0/places/4-banana]
+SessionController: missing default helper path session_helper
+
+
+Processing SessionController#destroy (for 127.0.0.1 at 2007-09-13 02:05:21) [DELETE]
+  Session ID: 2222d75efe9215120f15cae38d856470
+  Parameters: {"_method"=>"delete", "action"=>"destroy", "controller"=>"session"}
+  [4;35;1mUser Columns (0.003282)[0m   [0mSHOW FIELDS FROM users[0m
+  [4;36;1mUser Load (0.001080)[0m   [0;1mSELECT * FROM users WHERE (users.`id` = 4) LIMIT 1[0m
+  [4;35;1mSQL (0.000125)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.000306)[0m   [0;1mUPDATE users SET `created_at` = '2007-09-12 18:45:18', `login` = 'demo', `crypted_password` = 'fa10ad173eac3ae13a072ab35bf219aaf4880b38', `remember_token_expires_at` = NULL, `salt` = '75072eb8e0dbd86f382bbe880c50b3995c3678c2', `admin` = 0, `remember_token` = NULL, `identity_url` = NULL, `read_intro` = 1, `last_login_at` = NULL, `email` = 'demo@demo.com', `visits_count` = 0, `updated_at` = '2007-09-13 02:05:21' WHERE `id` = 4[0m
+  [4;35;1mSQL (0.000993)[0m   [0mCOMMIT[0m
+Cookie set: auth_token=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+Redirected to http://0.0.0.0:3001/
+Completed in 0.03617 (27 reqs/sec) | DB: 0.00579 (15%) | 302 Found [http://0.0.0.0/logout]
+
+
+Processing PlacesController#index (for 127.0.0.1 at 2007-09-13 02:05:21) [GET]
+  Session ID: a4fca1ec8e463ea9312d528a7f1f42e7
+  Parameters: {"action"=>"index", "controller"=>"places"}
+  [4;36;1mPlace Columns (0.002977)[0m   [0;1mSHOW FIELDS FROM places[0m
+  [4;35;1mSQL (0.000413)[0m   [0mSELECT count(*) AS count_all FROM places [0m
+  [4;36;1mPlace Load (0.001362)[0m   [0;1mSELECT * FROM places ORDER BY created_at DESC LIMIT 0, 30[0m
+Rendering actionindexlayoutfalsecontent_typetext/html within layouts/mowawi
+Rendering places/index
+Rendered places/_place (0.00199)
+Rendered places/_place (0.00071)
+Rendered places/_place (0.00026)
+Rendered places/_place (0.00164)
+Rendered places/_place (0.00023)
+Completed in 0.02603 (38 reqs/sec) | Rendering: 0.00947 (36%) | DB: 0.00475 (18%) | 200 OK [http://0.0.0.0/]
+SessionController: missing default helper path session_helper
+
+
+Processing SessionController#new (for 127.0.0.1 at 2007-09-13 02:05:26) [GET]
+  Session ID: a4fca1ec8e463ea9312d528a7f1f42e7
+  Parameters: {"action"=>"new", "controller"=>"session"}
+Rendering  within layouts/mowawi
+Rendering session/new
+Completed in 0.00353 (283 reqs/sec) | Rendering: 0.00248 (70%) | DB: 0.00000 (0%) | 200 OK [http://0.0.0.0/session/new]
+SessionController: missing default helper path session_helper
+
+
+Processing SessionController#new (for 127.0.0.1 at 2007-09-13 02:05:26) [GET]
+  Session ID: a4fca1ec8e463ea9312d528a7f1f42e7
+  Parameters: {"action"=>"new", "controller"=>"session"}
+Rendering  within layouts/mowawi
+Rendering session/new
+Completed in 0.00497 (201 reqs/sec) | Rendering: 0.00330 (66%) | DB: 0.00000 (0%) | 200 OK [http://0.0.0.0/session/new]
+SessionController: missing default helper path session_helper
+
+
+Processing SessionController#new (for 127.0.0.1 at 2007-09-13 02:05:29) [GET]
+  Session ID: a4fca1ec8e463ea9312d528a7f1f42e7
+  Parameters: {"action"=>"new", "controller"=>"session"}
+Rendering  within layouts/mowawi
+Rendering session/new
+Completed in 0.00457 (218 reqs/sec) | Rendering: 0.00306 (67%) | DB: 0.00000 (0%) | 200 OK [http://0.0.0.0/session/new]
+SessionController: missing default helper path session_helper
+
+
+Processing SessionController#create (for 127.0.0.1 at 2007-09-13 02:05:35) [POST]
+  Session ID: a4fca1ec8e463ea9312d528a7f1f42e7
+  Parameters: {"commit"=>"Log in", "openid_url"=>"", "action"=>"create", "method"=>:get, "controller"=>"session", "login"=>"demo", "password"=>"demo"}
+  [4;35;1mUser Columns (0.004283)[0m   [0mSHOW FIELDS FROM users[0m
+  [4;36;1mUser Load (0.001268)[0m   [0;1mSELECT * FROM users WHERE (users.`login` = 'demo') LIMIT 1[0m
+  [4;35;1mSQL (0.000162)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.000439)[0m   [0;1mUPDATE users SET `created_at` = '2007-09-12 18:45:18', `login` = 'demo', `crypted_password` = 'fa10ad173eac3ae13a072ab35bf219aaf4880b38', `remember_token_expires_at` = NULL, `salt` = '75072eb8e0dbd86f382bbe880c50b3995c3678c2', `admin` = 0, `remember_token` = NULL, `identity_url` = NULL, `read_intro` = 0, `last_login_at` = NULL, `email` = 'demo@demo.com', `visits_count` = 0, `updated_at` = '2007-09-13 02:05:35' WHERE `id` = 4[0m
+  [4;35;1mSQL (0.001255)[0m   [0mCOMMIT[0m
+Redirected to http://0.0.0.0:3001/
+Completed in 0.03611 (27 reqs/sec) | DB: 0.00741 (20%) | 302 Found [http://0.0.0.0/session]
+
+
+Processing PlacesController#index (for 127.0.0.1 at 2007-09-13 02:05:35) [GET]
+  Session ID: a4fca1ec8e463ea9312d528a7f1f42e7
+  Parameters: {"action"=>"index", "controller"=>"places"}
+  [4;36;1mPlace Columns (0.002851)[0m   [0;1mSHOW FIELDS FROM places[0m
+  [4;35;1mSQL (0.000345)[0m   [0mSELECT count(*) AS count_all FROM places [0m
+  [4;36;1mPlace Load (0.001013)[0m   [0;1mSELECT * FROM places ORDER BY created_at DESC LIMIT 0, 30[0m
+Rendering actionindexlayoutfalsecontent_typetext/html within layouts/mowawi
+Rendering places/index
+  [4;35;1mUser Columns (0.004360)[0m   [0mSHOW FIELDS FROM users[0m
+  [4;36;1mUser Load (0.001313)[0m   [0;1mSELECT * FROM users WHERE (users.`id` = 4) LIMIT 1[0m
+Rendered places/_place (0.00190)
+Rendered places/_place (0.00066)
+Rendered places/_place (0.00027)
+Rendered places/_place (0.00187)
+Rendered places/_place (0.00029)
+Completed in 0.04884 (20 reqs/sec) | Rendering: 0.02966 (60%) | DB: 0.00988 (20%) | 200 OK [http://0.0.0.0/]
+SessionController: missing default helper path session_helper
+
+
+Processing SessionController#destroy (for 127.0.0.1 at 2007-09-13 02:10:34) [GET]
+  Session ID: a4fca1ec8e463ea9312d528a7f1f42e7
+  Parameters: {"action"=>"destroy", "controller"=>"session"}
+  [4;36;1mSQL (0.000218)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mUser Columns (0.004159)[0m   [0mSHOW FIELDS FROM users[0m
+  [4;36;1mUser Load (0.001558)[0m   [0;1mSELECT * FROM users WHERE (users.`id` = 4) LIMIT 1[0m
+  [4;35;1mSQL (0.000172)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.000672)[0m   [0;1mUPDATE users SET `created_at` = '2007-09-12 18:45:18', `login` = 'demo', `crypted_password` = 'fa10ad173eac3ae13a072ab35bf219aaf4880b38', `remember_token_expires_at` = NULL, `salt` = '75072eb8e0dbd86f382bbe880c50b3995c3678c2', `admin` = 0, `remember_token` = NULL, `identity_url` = NULL, `read_intro` = 0, `last_login_at` = NULL, `email` = 'demo@demo.com', `visits_count` = 0, `updated_at` = '2007-09-13 02:10:34' WHERE `id` = 4[0m
+  [4;35;1mSQL (0.000828)[0m   [0mCOMMIT[0m
+Cookie set: auth_token=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+Redirected to http://0.0.0.0:3001/
+Completed in 0.08715 (11 reqs/sec) | DB: 0.00761 (8%) | 302 Found [http://0.0.0.0/logout]
+
+
+Processing PlacesController#index (for 127.0.0.1 at 2007-09-13 02:10:35) [GET]
+  Session ID: 35d4f24291eaa0b6010684da3289e1cf
+  Parameters: {"action"=>"index", "controller"=>"places"}
+  [4;36;1mPlace Columns (0.003659)[0m   [0;1mSHOW FIELDS FROM places[0m
+  [4;35;1mSQL (0.001081)[0m   [0mSELECT count(*) AS count_all FROM places [0m
+  [4;36;1mPlace Load (0.001747)[0m   [0;1mSELECT * FROM places ORDER BY created_at DESC LIMIT 0, 30[0m
+Rendering actionindexlayoutfalsecontent_typetext/html within layouts/mowawi
+Rendering places/index
+Rendered places/_place (0.00273)
+Rendered places/_place (0.00066)
+Rendered places/_place (0.00023)
+Rendered places/_place (0.00192)
+Rendered places/_place (0.00027)
+ERROR: compiling _run_rhtml_47app47views47layouts47mowawi46rhtml RAISED compile error
+script/../config/../app/views/layouts/mowawi.rhtml:52: parse error, unexpected $, expecting kEND
+Function body: def _run_rhtml_47app47views47layouts47mowawi46rhtml(local_assigns)
+_erbout = ''; _erbout.concat "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\n"
+_erbout.concat "<html xmlns=\"http://www.w3.org/1999/xhtml\">\n"
+_erbout.concat "<head>\n"
+_erbout.concat "  <meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\" />\n"
+_erbout.concat "  <title>Mowawi</title>\n"
+_erbout.concat "  "; _erbout.concat(( stylesheet_link_tag 'reset' ).to_s); _erbout.concat "\n"
+_erbout.concat "  "; _erbout.concat(( stylesheet_link_tag 'screen' ).to_s); _erbout.concat "\n"
+_erbout.concat "  "; _erbout.concat(( javascript_include_tag 'prototype', 'lowpro', 'remote', 'intro' ).to_s); _erbout.concat "\n"
+_erbout.concat "  "; _erbout.concat(( yield :header ).to_s); _erbout.concat "\n"
+_erbout.concat "</head>\n"
+_erbout.concat "\n"
+_erbout.concat "<body>\n"
+_erbout.concat "  <div id=\"header\">\n"
+_erbout.concat "    <h1><a href=\"/\"><span>MOWAWI</span></a></h1><p>Mobile Web Waypointing Wiki</p>\n"
+_erbout.concat "    <div id=\"login\">\n"
+_erbout.concat "    ";  if logged_in? ; _erbout.concat "\n"
+_erbout.concat "      "; _erbout.concat(( gravatar_for current_user ).to_s); _erbout.concat "\n"
+_erbout.concat "      <p>Logged in as "; _erbout.concat(( link_to current_user.login, user_path(current_user) ).to_s); _erbout.concat "</p>\n"
+_erbout.concat "      <p>"; _erbout.concat(( link_to "Logout", logout_path, :method => :delete ).to_s); _erbout.concat "</p>\n"
+_erbout.concat "    ";  else ; _erbout.concat "\n"
+_erbout.concat "      <p>You are not logged in!</p>\n"
+_erbout.concat "      <p>"; _erbout.concat(( link_to "Login", new_session_path ).to_s); _erbout.concat " or "; _erbout.concat(( link_to "Signup", new_user_path ).to_s); _erbout.concat "</p>\n"
+_erbout.concat "    ";  end ; _erbout.concat "\n"
+_erbout.concat "    </div>\n"
+_erbout.concat "  </div>\n"
+_erbout.concat "  ";  if flash.any? ; _erbout.concat "\n"
+_erbout.concat "    <div id=\"flash\">"; _erbout.concat(( flash[:notice] ).to_s); _erbout.concat "</div>";  flash.clear ; _erbout.concat "\n"
+_erbout.concat "  ";  end ; _erbout.concat "\n"
+_erbout.concat "  <div id=\"page\">\n"
+_erbout.concat "    <div id=\"content\">\n"
+ unless logged_in? 
+_erbout.concat "        <p>You can sign in to the demo account.<br/>\n"
+_erbout.concat "           login: demo\n"
+_erbout.concat "           password: demo\n"
+_erbout.concat "        </p>\n"
+ unless logged_in? && current_user.read_intro? 
+_erbout.concat "        <p id=\"intro\">Mowawi is an application created by "; _erbout.concat(( link_to "David Rice", "http://www.davidjrice.co.uk" ).to_s); _erbout.concat " \n"
+_erbout.concat "          in 48 hours as part of the "; _erbout.concat(( link_to "Rails Rumble", "http://www.railsrumble.com" ).to_s); _erbout.concat " competition.\n"
+_erbout.concat "        <span>It is a wiki style city framework which presents data in a way friendly to mobile devices.</span>\n"
+_erbout.concat "        Probably a little too ambitious after losing the other team members to "; _erbout.concat(( link_to "other teams", "http://joglog.railsrumble.com" ).to_s); _erbout.concat ", sickness and work commitments... including \n"
+_erbout.concat "        our mobile device expert! But in the end I was rumbling for the fun :)\n"
+ if logged_in? 
+_erbout.concat "        "; _erbout.concat(( link_to "I've read this, hide it forever!", read_intro_path, :id => "hide_intro" ).to_s); _erbout.concat "\n"
+ end 
+_erbout.concat "        </p>\n"
+ end 
+_erbout.concat "      "; _erbout.concat(( yield ).to_s); _erbout.concat "\n"
+_erbout.concat "    </div>\n"
+_erbout.concat "  </div>\n"
+_erbout.concat "</body>\n"
+_erbout.concat "</html>"; _erbout
+end
+Backtrace: script/../config/../app/views/layouts/mowawi.rhtml:52:in `compile_template'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_view/base.rb:319:in `compile_and_render_template'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_view/base.rb:301:in `render_template'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_view/base.rb:260:in `render_file'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/layout.rb:254:in `render_without_benchmark'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/benchmarking.rb:50:in `render'
+/usr/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/benchmarking.rb:50:in `render'
+./script/../config/../app/controllers/places_controller.rb:24:in `index'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/mime_responds.rb:167:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/mime_responds.rb:167:in `respond'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/mime_responds.rb:161:in `each'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/mime_responds.rb:161:in `respond'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/mime_responds.rb:105:in `respond_to'
+./script/../config/../app/controllers/places_controller.rb:24:in `index'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:1095:in `send'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:1095:in `perform_action_without_filters'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:632:in `call_filter'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:634:in `call_filter'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:638:in `call_filter'
+./script/../config/../app/controllers/application.rb:27:in `catch_errors'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:456:in `send'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:456:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:637:in `call_filter'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:638:in `call_filter'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:438:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:637:in `call_filter'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:619:in `perform_action_without_benchmark'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+/usr/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/rescue.rb:83:in `perform_action'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:430:in `send'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:430:in `process_without_filters'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:624:in `process_without_session_management_support'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/session_management.rb:114:in `process'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:330:in `process'
+/usr/local/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/dispatcher.rb:41:in `dispatch'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:78:in `process'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `synchronize'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `process'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:618:in `process_client'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `each'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `process_client'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `initialize'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `new'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `initialize'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `new'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:271:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `each'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:127:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/command.rb:211:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:243
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:488:in `load'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:488:in `load'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:488:in `load'
+/usr/local/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/commands/servers/mongrel.rb:60
+/usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+/usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:495:in `require'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:495:in `require'
+/usr/local/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/commands/server.rb:39
+/usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+/usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+script/server:3
+
+
+ActionView::TemplateError (compile error
+script/../config/../app/views/layouts/mowawi.rhtml:52: parse error, unexpected $, expecting kEND) on line #52 of app/views/layouts/mowawi.rhtml:
+49:   </div>
+50: </body>
+51: </html>
+    #{RAILS_ROOT}/app/views/layouts/mowawi.rhtml:52:in `compile_template'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_view/base.rb:319:in `compile_and_render_template'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_view/base.rb:301:in `render_template'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_view/base.rb:260:in `render_file'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/layout.rb:254:in `render_without_benchmark'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/benchmarking.rb:50:in `render'
+    /usr/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/benchmarking.rb:50:in `render'
+    app/controllers/places_controller.rb:24:in `index'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/mime_responds.rb:167:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/mime_responds.rb:167:in `respond'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/mime_responds.rb:161:in `each'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/mime_responds.rb:161:in `respond'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/mime_responds.rb:105:in `respond_to'
+    app/controllers/places_controller.rb:24:in `index'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:1095:in `send'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:1095:in `perform_action_without_filters'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:632:in `call_filter'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:634:in `call_filter'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:638:in `call_filter'
+    app/controllers/application.rb:27:in `catch_errors'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:456:in `send'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:456:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:637:in `call_filter'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:638:in `call_filter'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:438:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:637:in `call_filter'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:619:in `perform_action_without_benchmark'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/rescue.rb:83:in `perform_action'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:430:in `send'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:430:in `process_without_filters'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:624:in `process_without_session_management_support'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/session_management.rb:114:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:330:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/dispatcher.rb:41:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:78:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `synchronize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:618:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `each'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `initialize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `new'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `initialize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `new'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:271:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `each'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:127:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/command.rb:211:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:243
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:488:in `load'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:488:in `load'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:488:in `load'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/commands/servers/mongrel.rb:60
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:495:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:495:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/commands/server.rb:39
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+
+Rendering /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/templates/rescues/layout.rhtml (500 Internal Error)
+SessionController: missing default helper path session_helper
+
+
+Processing SessionController#destroy (for 127.0.0.1 at 2007-09-13 02:10:41) [GET]
+  Session ID: 35d4f24291eaa0b6010684da3289e1cf
+  Parameters: {"action"=>"destroy", "controller"=>"session"}
+Cookie set: auth_token=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+Redirected to http://0.0.0.0:3001/
+Completed in 0.00832 (120 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://0.0.0.0/logout]
+
+
+Processing PlacesController#index (for 127.0.0.1 at 2007-09-13 02:10:42) [GET]
+  Session ID: b67bea6f203a083bcd8ab7bd60fee5e9
+  Parameters: {"action"=>"index", "controller"=>"places"}
+  [4;35;1mPlace Columns (0.003855)[0m   [0mSHOW FIELDS FROM places[0m
+  [4;36;1mSQL (0.001354)[0m   [0;1mSELECT count(*) AS count_all FROM places [0m
+  [4;35;1mPlace Load (0.001362)[0m   [0mSELECT * FROM places ORDER BY created_at DESC LIMIT 0, 30[0m
+Rendering actionindexlayoutfalsecontent_typetext/html within layouts/mowawi
+Rendering places/index
+Rendered places/_place (0.00195)
+Rendered places/_place (0.00063)
+Rendered places/_place (0.00026)
+Rendered places/_place (0.00155)
+Rendered places/_place (0.00035)
+Completed in 0.03127 (31 reqs/sec) | Rendering: 0.01219 (38%) | DB: 0.00657 (21%) | 200 OK [http://0.0.0.0/]
+SessionController: missing default helper path session_helper
+
+
+Processing SessionController#destroy (for 127.0.0.1 at 2007-09-13 02:10:51) [GET]
+  Session ID: b67bea6f203a083bcd8ab7bd60fee5e9
+  Parameters: {"action"=>"destroy", "controller"=>"session"}
+Cookie set: auth_token=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+Redirected to http://0.0.0.0:3001/
+Completed in 0.00776 (128 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://0.0.0.0/logout]
+
+
+Processing PlacesController#index (for 127.0.0.1 at 2007-09-13 02:10:52) [GET]
+  Session ID: 676c907e767b6f4ec58ed61b2ce659c8
+  Parameters: {"action"=>"index", "controller"=>"places"}
+  [4;36;1mPlace Columns (0.003705)[0m   [0;1mSHOW FIELDS FROM places[0m
+  [4;35;1mSQL (0.002102)[0m   [0mSELECT count(*) AS count_all FROM places [0m
+  [4;36;1mPlace Load (0.001659)[0m   [0;1mSELECT * FROM places ORDER BY created_at DESC LIMIT 0, 30[0m
+Rendering actionindexlayoutfalsecontent_typetext/html within layouts/mowawi
+Rendering places/index
+Rendered places/_place (0.00212)
+Rendered places/_place (0.00067)
+Rendered places/_place (0.00023)
+Rendered places/_place (0.00174)
+Rendered places/_place (0.00026)
+Completed in 0.02971 (33 reqs/sec) | Rendering: 0.01243 (41%) | DB: 0.00747 (25%) | 200 OK [http://0.0.0.0/]
+SessionController: missing default helper path session_helper
+
+
+Processing SessionController#destroy (for 127.0.0.1 at 2007-09-13 02:11:28) [GET]
+  Session ID: 676c907e767b6f4ec58ed61b2ce659c8
+  Parameters: {"action"=>"destroy", "controller"=>"session"}
+Cookie set: auth_token=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+Redirected to http://0.0.0.0:3001/
+Completed in 0.00986 (101 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://0.0.0.0/logout]
+
+
+Processing PlacesController#index (for 127.0.0.1 at 2007-09-13 02:11:28) [GET]
+  Session ID: 6bb2e50b20a0fc498bc0f6c141a3da77
+  Parameters: {"action"=>"index", "controller"=>"places"}
+  [4;35;1mPlace Columns (0.002696)[0m   [0mSHOW FIELDS FROM places[0m
+  [4;36;1mSQL (0.000335)[0m   [0;1mSELECT count(*) AS count_all FROM places [0m
+  [4;35;1mPlace Load (0.001007)[0m   [0mSELECT * FROM places ORDER BY created_at DESC LIMIT 0, 30[0m
+Rendering actionindexlayoutfalsecontent_typetext/html within layouts/mowawi
+Rendering places/index
+Rendered places/_place (0.00153)
+Rendered places/_place (0.00049)
+Rendered places/_place (0.00018)
+Rendered places/_place (0.00125)
+Rendered places/_place (0.00021)
+Completed in 0.02327 (42 reqs/sec) | Rendering: 0.01024 (44%) | DB: 0.00404 (17%) | 200 OK [http://0.0.0.0/]
+SessionController: missing default helper path session_helper
+
+
+Processing SessionController#new (for 127.0.0.1 at 2007-09-13 02:11:41) [GET]
+  Session ID: 6bb2e50b20a0fc498bc0f6c141a3da77
+  Parameters: {"action"=>"new", "controller"=>"session"}
+Rendering  within layouts/mowawi
+Rendering session/new
+Completed in 0.00505 (198 reqs/sec) | Rendering: 0.00395 (78%) | DB: 0.00000 (0%) | 200 OK [http://0.0.0.0/session/new]
+SessionController: missing default helper path session_helper
+
+
+Processing SessionController#create (for 127.0.0.1 at 2007-09-13 02:11:47) [POST]
+  Session ID: 6bb2e50b20a0fc498bc0f6c141a3da77
+  Parameters: {"commit"=>"Log in", "openid_url"=>"", "action"=>"create", "method"=>:get, "controller"=>"session", "login"=>"demo", "password"=>"demo"}
+  [4;36;1mUser Columns (0.004132)[0m   [0;1mSHOW FIELDS FROM users[0m
+  [4;35;1mUser Load (0.001399)[0m   [0mSELECT * FROM users WHERE (users.`login` = 'demo') LIMIT 1[0m
+  [4;36;1mSQL (0.000163)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.000374)[0m   [0mUPDATE users SET `created_at` = '2007-09-12 18:45:18', `login` = 'demo', `crypted_password` = 'fa10ad173eac3ae13a072ab35bf219aaf4880b38', `remember_token_expires_at` = NULL, `salt` = '75072eb8e0dbd86f382bbe880c50b3995c3678c2', `admin` = 0, `remember_token` = NULL, `identity_url` = NULL, `read_intro` = 0, `last_login_at` = NULL, `email` = 'demo@demo.com', `visits_count` = 0, `updated_at` = '2007-09-13 02:11:47' WHERE `id` = 4[0m
+  [4;36;1mSQL (0.000977)[0m   [0;1mCOMMIT[0m
+Redirected to http://0.0.0.0:3001/
+Completed in 0.03250 (30 reqs/sec) | DB: 0.00705 (21%) | 302 Found [http://0.0.0.0/session]
+
+
+Processing PlacesController#index (for 127.0.0.1 at 2007-09-13 02:11:47) [GET]
+  Session ID: 6bb2e50b20a0fc498bc0f6c141a3da77
+  Parameters: {"action"=>"index", "controller"=>"places"}
+  [4;35;1mPlace Columns (0.002912)[0m   [0mSHOW FIELDS FROM places[0m
+  [4;36;1mSQL (0.000806)[0m   [0;1mSELECT count(*) AS count_all FROM places [0m
+  [4;35;1mPlace Load (0.027976)[0m   [0mSELECT * FROM places ORDER BY created_at DESC LIMIT 0, 30[0m
+Rendering actionindexlayoutfalsecontent_typetext/html within layouts/mowawi
+Rendering places/index
+  [4;36;1mUser Columns (0.004166)[0m   [0;1mSHOW FIELDS FROM users[0m
+  [4;35;1mUser Load (0.002154)[0m   [0mSELECT * FROM users WHERE (users.`id` = 4) LIMIT 1[0m
+Rendered places/_place (0.00201)
+Rendered places/_place (0.00073)
+Rendered places/_place (0.00024)
+Rendered places/_place (0.00171)
+Rendered places/_place (0.00027)
+Completed in 0.08640 (11 reqs/sec) | Rendering: 0.03642 (42%) | DB: 0.03801 (43%) | 200 OK [http://0.0.0.0/]
+
+
+Processing PlacesController#index (for 127.0.0.1 at 2007-09-13 02:13:49) [GET]
+  Session ID: 6bb2e50b20a0fc498bc0f6c141a3da77
+  Parameters: {"action"=>"index", "controller"=>"places"}
+  [4;36;1mSQL (0.000178)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mPlace Columns (0.003434)[0m   [0mSHOW FIELDS FROM places[0m
+  [4;36;1mSQL (0.000445)[0m   [0;1mSELECT count(*) AS count_all FROM places [0m
+  [4;35;1mPlace Load (0.001379)[0m   [0mSELECT * FROM places ORDER BY created_at DESC LIMIT 0, 30[0m
+Rendering actionindexlayoutfalsecontent_typetext/html within layouts/mowawi
+Rendering places/index
+  [4;36;1mUser Columns (0.004311)[0m   [0;1mSHOW FIELDS FROM users[0m
+  [4;35;1mUser Load (0.001601)[0m   [0mSELECT * FROM users WHERE (users.`id` = 4) LIMIT 1[0m
+Rendered places/_place (0.00273)
+Rendered places/_place (0.00073)
+Rendered places/_place (0.00024)
+Rendered places/_place (0.00161)
+Rendered places/_place (0.00025)
+Completed in 0.10764 (9 reqs/sec) | Rendering: 0.03925 (36%) | DB: 0.01135 (10%) | 200 OK [http://0.0.0.0/]
+
+
+Processing PlacesController#show (for 127.0.0.1 at 2007-09-13 02:13:53) [GET]
+  Session ID: 6bb2e50b20a0fc498bc0f6c141a3da77
+  Parameters: {"action"=>"show", "id"=>"14-My House", "controller"=>"places"}
+  [4;36;1mPlace Columns (0.003398)[0m   [0;1mSHOW FIELDS FROM places[0m
+  [4;35;1mPlace Load (0.001115)[0m   [0mSELECT * FROM places WHERE (places.`id` = 14) [0m
+  [4;36;1mPlace Load (0.001394)[0m   [0;1mSELECT *, (ACOS(COS(0.952846570270234)*COS(-0.103456276367556)*COS(RADIANS(places.lat))*COS(RADIANS(places.lng))+
+ COS(0.952846570270234)*SIN(-0.103456276367556)*COS(RADIANS(places.lat))*SIN(RADIANS(places.lng))+
+ SIN(0.952846570270234)*SIN(RADIANS(places.lat)))*6376.77271)
+ AS distance FROM places WHERE (places.lat>54.5491616262108 AND places.lat<54.6390123737892 AND places.lng>-6.00515036614597 AND places.lng<-5.85006563385403 AND (ACOS(COS(0.952846570270234)*COS(-0.103456276367556)*COS(RADIANS(places.lat))*COS(RADIANS(places.lng))+
+ COS(0.952846570270234)*SIN(-0.103456276367556)*COS(RADIANS(places.lat))*SIN(RADIANS(places.lng))+
+ SIN(0.952846570270234)*SIN(RADIANS(places.lat)))*6376.77271)
+ <= 5) [0m
+  [4;35;1mPhoto Load (0.001000)[0m   [0mSELECT * FROM photos WHERE (photos.place_id = 14) [0m
+Rendering actionshowlayoutfalsecontent_typetext/html within layouts/mowawi
+Rendering places/show
+  [4;36;1mUser Columns (0.005044)[0m   [0;1mSHOW FIELDS FROM users[0m
+  [4;35;1mUser Load (0.001402)[0m   [0mSELECT * FROM users WHERE (users.`id` = 4) LIMIT 1[0m
+Completed in 0.14888 (6 reqs/sec) | Rendering: 0.02668 (17%) | DB: 0.01335 (8%) | 200 OK [http://0.0.0.0/places/14-My+House]
+
+
+Processing PlacesController#show (for 127.0.0.1 at 2007-09-13 02:14:21) [GET]
+  Session ID: 6bb2e50b20a0fc498bc0f6c141a3da77
+  Parameters: {"action"=>"show", "id"=>"14-My House", "controller"=>"places"}
+  [4;36;1mPlace Columns (0.003210)[0m   [0;1mSHOW FIELDS FROM places[0m
+  [4;35;1mPlace Load (0.001056)[0m   [0mSELECT * FROM places WHERE (places.`id` = 14) [0m
+  [4;36;1mPlace Load (0.001366)[0m   [0;1mSELECT *, (ACOS(COS(0.952846570270234)*COS(-0.103456276367556)*COS(RADIANS(places.lat))*COS(RADIANS(places.lng))+
+ COS(0.952846570270234)*SIN(-0.103456276367556)*COS(RADIANS(places.lat))*SIN(RADIANS(places.lng))+
+ SIN(0.952846570270234)*SIN(RADIANS(places.lat)))*6376.77271)
+ AS distance FROM places WHERE (places.lat>54.5491616262108 AND places.lat<54.6390123737892 AND places.lng>-6.00515036614597 AND places.lng<-5.85006563385403 AND (ACOS(COS(0.952846570270234)*COS(-0.103456276367556)*COS(RADIANS(places.lat))*COS(RADIANS(places.lng))+
+ COS(0.952846570270234)*SIN(-0.103456276367556)*COS(RADIANS(places.lat))*SIN(RADIANS(places.lng))+
+ SIN(0.952846570270234)*SIN(RADIANS(places.lat)))*6376.77271)
+ <= 5) [0m
+  [4;35;1mPhoto Load (0.001295)[0m   [0mSELECT * FROM photos WHERE (photos.place_id = 14) [0m
+Rendering actionshowlayoutfalsecontent_typetext/html within layouts/mowawi
+Rendering places/show
+  [4;36;1mUser Columns (0.003151)[0m   [0;1mSHOW FIELDS FROM users[0m
+  [4;35;1mUser Load (0.001307)[0m   [0mSELECT * FROM users WHERE (users.`id` = 4) LIMIT 1[0m
+Completed in 0.08251 (12 reqs/sec) | Rendering: 0.02710 (32%) | DB: 0.01138 (13%) | 200 OK [http://0.0.0.0/places/14-My+House]
+
+
+Processing PlacesController#show (for 127.0.0.1 at 2007-09-13 02:14:30) [GET]
+  Session ID: 6bb2e50b20a0fc498bc0f6c141a3da77
+  Parameters: {"action"=>"show", "id"=>"14-My House", "controller"=>"places"}
+  [4;36;1mPlace Columns (0.003627)[0m   [0;1mSHOW FIELDS FROM places[0m
+  [4;35;1mPlace Load (0.001090)[0m   [0mSELECT * FROM places WHERE (places.`id` = 14) [0m
+  [4;36;1mPlace Load (0.001363)[0m   [0;1mSELECT *, (ACOS(COS(0.952846570270234)*COS(-0.103456276367556)*COS(RADIANS(places.lat))*COS(RADIANS(places.lng))+
+ COS(0.952846570270234)*SIN(-0.103456276367556)*COS(RADIANS(places.lat))*SIN(RADIANS(places.lng))+
+ SIN(0.952846570270234)*SIN(RADIANS(places.lat)))*6376.77271)
+ AS distance FROM places WHERE (places.lat>54.5491616262108 AND places.lat<54.6390123737892 AND places.lng>-6.00515036614597 AND places.lng<-5.85006563385403 AND (ACOS(COS(0.952846570270234)*COS(-0.103456276367556)*COS(RADIANS(places.lat))*COS(RADIANS(places.lng))+
+ COS(0.952846570270234)*SIN(-0.103456276367556)*COS(RADIANS(places.lat))*SIN(RADIANS(places.lng))+
+ SIN(0.952846570270234)*SIN(RADIANS(places.lat)))*6376.77271)
+ <= 5) [0m
+  [4;35;1mPhoto Load (0.000997)[0m   [0mSELECT * FROM photos WHERE (photos.place_id = 14) [0m
+Rendering actionshowlayoutfalsecontent_typetext/html within layouts/mowawi
+Rendering places/show
+  [4;36;1mUser Columns (0.004144)[0m   [0;1mSHOW FIELDS FROM users[0m
+  [4;35;1mUser Load (0.001380)[0m   [0mSELECT * FROM users WHERE (users.`id` = 4) LIMIT 1[0m
+Completed in 0.14808 (6 reqs/sec) | Rendering: 0.02528 (17%) | DB: 0.01260 (8%) | 200 OK [http://0.0.0.0/places/14-My+House]
+
+
+Processing PlacesController#show (for 127.0.0.1 at 2007-09-13 02:14:56) [GET]
+  Session ID: 6bb2e50b20a0fc498bc0f6c141a3da77
+  Parameters: {"action"=>"show", "id"=>"14-My House", "controller"=>"places"}
+  [4;36;1mPlace Columns (0.002754)[0m   [0;1mSHOW FIELDS FROM places[0m
+  [4;35;1mPlace Load (0.000835)[0m   [0mSELECT * FROM places WHERE (places.`id` = 14) [0m
+  [4;36;1mPlace Load (0.001048)[0m   [0;1mSELECT *, (ACOS(COS(0.952846570270234)*COS(-0.103456276367556)*COS(RADIANS(places.lat))*COS(RADIANS(places.lng))+
+ COS(0.952846570270234)*SIN(-0.103456276367556)*COS(RADIANS(places.lat))*SIN(RADIANS(places.lng))+
+ SIN(0.952846570270234)*SIN(RADIANS(places.lat)))*6376.77271)
+ AS distance FROM places WHERE (places.lat>54.5491616262108 AND places.lat<54.6390123737892 AND places.lng>-6.00515036614597 AND places.lng<-5.85006563385403 AND (ACOS(COS(0.952846570270234)*COS(-0.103456276367556)*COS(RADIANS(places.lat))*COS(RADIANS(places.lng))+
+ COS(0.952846570270234)*SIN(-0.103456276367556)*COS(RADIANS(places.lat))*SIN(RADIANS(places.lng))+
+ SIN(0.952846570270234)*SIN(RADIANS(places.lat)))*6376.77271)
+ <= 5) [0m
+  [4;35;1mPhoto Load (0.001080)[0m   [0mSELECT * FROM photos WHERE (photos.place_id = 14) [0m
+Rendering actionshowlayoutfalsecontent_typetext/html within layouts/mowawi
+Rendering places/show
+  [4;36;1mUser Columns (0.003836)[0m   [0;1mSHOW FIELDS FROM users[0m
+  [4;35;1mUser Load (0.001123)[0m   [0mSELECT * FROM users WHERE (users.`id` = 4) LIMIT 1[0m
+Completed in 0.14059 (7 reqs/sec) | Rendering: 0.09503 (67%) | DB: 0.01068 (7%) | 200 OK [http://0.0.0.0/places/14-My+House]
+
+
+Processing PlacesController#edit (for 127.0.0.1 at 2007-09-13 02:19:17) [GET]
+  Session ID: 6bb2e50b20a0fc498bc0f6c141a3da77
+  Parameters: {"action"=>"edit", "id"=>"14-My House", "controller"=>"places"}
+  [4;36;1mUser Columns (0.004361)[0m   [0;1mSHOW FIELDS FROM users[0m
+  [4;35;1mUser Load (0.001440)[0m   [0mSELECT * FROM users WHERE (users.`id` = 4) LIMIT 1[0m
+  [4;36;1mPlace Columns (0.003092)[0m   [0;1mSHOW FIELDS FROM places[0m
+  [4;35;1mPlace Load (0.001028)[0m   [0mSELECT * FROM places WHERE (places.`id` = 14) [0m
+Rendering  within layouts/mowawi
+Rendering places/edit
+Completed in 0.05368 (18 reqs/sec) | Rendering: 0.00983 (18%) | DB: 0.00992 (18%) | 200 OK [http://0.0.0.0/places/14-My+House;edit]
+
+
+Processing PlacesController#edit (for 127.0.0.1 at 2007-09-13 02:19:58) [GET]
+  Session ID: 6bb2e50b20a0fc498bc0f6c141a3da77
+  Parameters: {"action"=>"edit", "id"=>"14-My House", "controller"=>"places"}
+  [4;36;1mUser Columns (0.004415)[0m   [0;1mSHOW FIELDS FROM users[0m
+  [4;35;1mUser Load (0.001474)[0m   [0mSELECT * FROM users WHERE (users.`id` = 4) LIMIT 1[0m
+  [4;36;1mPlace Columns (0.004004)[0m   [0;1mSHOW FIELDS FROM places[0m
+  [4;35;1mPlace Load (0.001391)[0m   [0mSELECT * FROM places WHERE (places.`id` = 14) [0m
+Rendering  within layouts/mowawi
+Rendering places/edit
+Completed in 0.04874 (20 reqs/sec) | Rendering: 0.00741 (15%) | DB: 0.01128 (23%) | 200 OK [http://0.0.0.0/places/14-My+House;edit]
+
+
+Processing PlacesController#edit (for 127.0.0.1 at 2007-09-13 02:20:12) [GET]
+  Session ID: 6bb2e50b20a0fc498bc0f6c141a3da77
+  Parameters: {"action"=>"edit", "id"=>"14-My House", "controller"=>"places"}
+  [4;36;1mUser Columns (0.004494)[0m   [0;1mSHOW FIELDS FROM users[0m
+  [4;35;1mUser Load (0.001350)[0m   [0mSELECT * FROM users WHERE (users.`id` = 4) LIMIT 1[0m
+  [4;36;1mPlace Columns (0.002988)[0m   [0;1mSHOW FIELDS FROM places[0m
+  [4;35;1mPlace Load (0.000881)[0m   [0mSELECT * FROM places WHERE (places.`id` = 14) [0m
+Rendering  within layouts/mowawi
+Rendering places/edit
+Completed in 0.12160 (8 reqs/sec) | Rendering: 0.00684 (5%) | DB: 0.00971 (7%) | 200 OK [http://0.0.0.0/places/14-My+House;edit]
+SessionController: missing default helper path session_helper
+
+
+Processing SessionController#destroy (for 127.0.0.1 at 2007-09-13 02:21:19) [DELETE]
+  Session ID: 6bb2e50b20a0fc498bc0f6c141a3da77
+  Parameters: {"_method"=>"delete", "action"=>"destroy", "controller"=>"session"}
+  [4;36;1mUser Columns (0.003233)[0m   [0;1mSHOW FIELDS FROM users[0m
+  [4;35;1mUser Load (0.001071)[0m   [0mSELECT * FROM users WHERE (users.`id` = 4) LIMIT 1[0m
+  [4;36;1mSQL (0.000128)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.000417)[0m   [0mUPDATE users SET `created_at` = '2007-09-12 18:45:18', `login` = 'demo', `crypted_password` = 'fa10ad173eac3ae13a072ab35bf219aaf4880b38', `remember_token_expires_at` = NULL, `salt` = '75072eb8e0dbd86f382bbe880c50b3995c3678c2', `admin` = 0, `remember_token` = NULL, `identity_url` = NULL, `read_intro` = 0, `last_login_at` = NULL, `email` = 'demo@demo.com', `visits_count` = 0, `updated_at` = '2007-09-13 02:21:19' WHERE `id` = 4[0m
+  [4;36;1mSQL (0.000893)[0m   [0;1mCOMMIT[0m
+Cookie set: auth_token=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+Redirected to http://0.0.0.0:3000/
+Completed in 0.03654 (27 reqs/sec) | DB: 0.00574 (15%) | 302 Found [http://0.0.0.0/logout]
+
+
+Processing PlacesController#index (for 127.0.0.1 at 2007-09-13 02:21:19) [GET]
+  Session ID: f4a6ed88ef8694005897db29dd7bca90
+  Parameters: {"action"=>"index", "controller"=>"places"}
+  [4;35;1mPlace Columns (0.003130)[0m   [0mSHOW FIELDS FROM places[0m
+  [4;36;1mSQL (0.000366)[0m   [0;1mSELECT count(*) AS count_all FROM places [0m
+  [4;35;1mPlace Load (0.001021)[0m   [0mSELECT * FROM places ORDER BY created_at DESC LIMIT 0, 30[0m
+Rendering actionindexlayoutfalsecontent_typetext/html within layouts/mowawi
+Rendering places/index
+Rendered places/_place (0.00202)
+Rendered places/_place (0.00062)
+Rendered places/_place (0.00018)
+Rendered places/_place (0.00136)
+Rendered places/_place (0.00019)
+Completed in 0.02528 (39 reqs/sec) | Rendering: 0.01058 (41%) | DB: 0.00452 (17%) | 200 OK [http://0.0.0.0/]
+
+
+Processing PlacesController#index (for 127.0.0.1 at 2007-09-13 02:21:21) [GET]
+  Session ID: f4a6ed88ef8694005897db29dd7bca90
+  Parameters: {"action"=>"index", "controller"=>"places"}
+  [4;36;1mPlace Columns (0.003595)[0m   [0;1mSHOW FIELDS FROM places[0m
+  [4;35;1mSQL (0.000500)[0m   [0mSELECT count(*) AS count_all FROM places [0m
+  [4;36;1mPlace Load (0.001431)[0m   [0;1mSELECT * FROM places ORDER BY created_at DESC LIMIT 0, 30[0m
+Rendering actionindexlayoutfalsecontent_typetext/html within layouts/mowawi
+Rendering places/index
+Rendered places/_place (0.00184)
+Rendered places/_place (0.00063)
+Rendered places/_place (0.00023)
+Rendered places/_place (0.00173)
+Rendered places/_place (0.00030)
+Completed in 0.02407 (41 reqs/sec) | Rendering: 0.00913 (37%) | DB: 0.00553 (22%) | 200 OK [http://0.0.0.0/]
+SessionController: missing default helper path session_helper
+
+
+Processing SessionController#new (for 127.0.0.1 at 2007-09-13 02:21:24) [GET]
+  Session ID: f4a6ed88ef8694005897db29dd7bca90
+  Parameters: {"action"=>"new", "controller"=>"session"}
+Rendering  within layouts/mowawi
+Rendering session/new
+Completed in 0.00443 (225 reqs/sec) | Rendering: 0.00337 (75%) | DB: 0.00000 (0%) | 200 OK [http://0.0.0.0/session/new]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2007-09-13 02:21:26) [GET]
+  Session ID: f4a6ed88ef8694005897db29dd7bca90
+  Parameters: {"action"=>"new", "controller"=>"users"}
+  [4;35;1mUser Columns (0.003233)[0m   [0mSHOW FIELDS FROM users[0m
+Rendering  within layouts/mowawi
+Rendering users/new
+Rendered users/_form (0.00288)
+Completed in 0.02741 (36 reqs/sec) | Rendering: 0.00615 (22%) | DB: 0.00323 (11%) | 200 OK [http://0.0.0.0/users/new]
+SessionController: missing default helper path session_helper
+
+
+Processing SessionController#new (for 127.0.0.1 at 2007-09-13 02:21:31) [GET]
+  Session ID: f4a6ed88ef8694005897db29dd7bca90
+  Parameters: {"action"=>"new", "controller"=>"session"}
+Rendering  within layouts/mowawi
+Rendering session/new
+Completed in 0.00432 (231 reqs/sec) | Rendering: 0.00299 (69%) | DB: 0.00000 (0%) | 200 OK [http://0.0.0.0/session/new]
+SessionController: missing default helper path session_helper
+
+
+Processing SessionController#new (for 127.0.0.1 at 2007-09-13 02:21:33) [GET]
+  Session ID: f4a6ed88ef8694005897db29dd7bca90
+  Parameters: {"action"=>"new", "controller"=>"session"}
+Rendering  within layouts/mowawi
+Rendering session/new
+Completed in 0.00328 (305 reqs/sec) | Rendering: 0.00229 (69%) | DB: 0.00000 (0%) | 200 OK [http://0.0.0.0/session/new]
+SessionController: missing default helper path session_helper
+
+
+Processing SessionController#create (for 127.0.0.1 at 2007-09-13 02:21:38) [POST]
+  Session ID: f4a6ed88ef8694005897db29dd7bca90
+  Parameters: {"commit"=>"Log in", "openid_url"=>"", "action"=>"create", "method"=>:get, "controller"=>"session", "login"=>"demo", "password"=>"demo"}
+  [4;36;1mUser Columns (0.004273)[0m   [0;1mSHOW FIELDS FROM users[0m
+  [4;35;1mUser Load (0.001371)[0m   [0mSELECT * FROM users WHERE (users.`login` = 'demo') LIMIT 1[0m
+  [4;36;1mSQL (0.000170)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.000434)[0m   [0mUPDATE users SET `created_at` = '2007-09-12 18:45:18', `login` = 'demo', `crypted_password` = 'fa10ad173eac3ae13a072ab35bf219aaf4880b38', `remember_token_expires_at` = NULL, `salt` = '75072eb8e0dbd86f382bbe880c50b3995c3678c2', `admin` = 0, `remember_token` = NULL, `identity_url` = NULL, `read_intro` = 0, `last_login_at` = NULL, `email` = 'demo@demo.com', `visits_count` = 0, `updated_at` = '2007-09-13 02:21:38' WHERE `id` = 4[0m
+  [4;36;1mSQL (0.000880)[0m   [0;1mCOMMIT[0m
+Redirected to http://0.0.0.0:3000/
+Completed in 0.03139 (31 reqs/sec) | DB: 0.00713 (22%) | 302 Found [http://0.0.0.0/session]
+
+
+Processing PlacesController#index (for 127.0.0.1 at 2007-09-13 02:21:39) [GET]
+  Session ID: f4a6ed88ef8694005897db29dd7bca90
+  Parameters: {"action"=>"index", "controller"=>"places"}
+  [4;35;1mPlace Columns (0.003386)[0m   [0mSHOW FIELDS FROM places[0m
+  [4;36;1mSQL (0.000349)[0m   [0;1mSELECT count(*) AS count_all FROM places [0m
+  [4;35;1mPlace Load (0.001016)[0m   [0mSELECT * FROM places ORDER BY created_at DESC LIMIT 0, 30[0m
+Rendering actionindexlayoutfalsecontent_typetext/html within layouts/mowawi
+Rendering places/index
+  [4;36;1mUser Columns (0.003883)[0m   [0;1mSHOW FIELDS FROM users[0m
+  [4;35;1mUser Load (0.001131)[0m   [0mSELECT * FROM users WHERE (users.`id` = 4) LIMIT 1[0m
+Rendered places/_place (0.00203)
+Rendered places/_place (0.00051)
+Rendered places/_place (0.00018)
+Rendered places/_place (0.00148)
+Rendered places/_place (0.00020)
+Completed in 0.04952 (20 reqs/sec) | Rendering: 0.03044 (61%) | DB: 0.00977 (19%) | 200 OK [http://0.0.0.0/]
+SessionController: missing default helper path session_helper
+
+
+Processing SessionController#destroy (for 127.0.0.1 at 2007-09-13 02:21:53) [DELETE]
+  Session ID: f4a6ed88ef8694005897db29dd7bca90
+  Parameters: {"_method"=>"delete", "action"=>"destroy", "controller"=>"session"}
+  [4;36;1mUser Columns (0.004279)[0m   [0;1mSHOW FIELDS FROM users[0m
+  [4;35;1mUser Load (0.002033)[0m   [0mSELECT * FROM users WHERE (users.`id` = 4) LIMIT 1[0m
+  [4;36;1mSQL (0.000182)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.000478)[0m   [0mUPDATE users SET `created_at` = '2007-09-12 18:45:18', `login` = 'demo', `crypted_password` = 'fa10ad173eac3ae13a072ab35bf219aaf4880b38', `remember_token_expires_at` = NULL, `salt` = '75072eb8e0dbd86f382bbe880c50b3995c3678c2', `admin` = 0, `remember_token` = NULL, `identity_url` = NULL, `read_intro` = 0, `last_login_at` = NULL, `email` = 'demo@demo.com', `visits_count` = 0, `updated_at` = '2007-09-13 02:21:53' WHERE `id` = 4[0m
+  [4;36;1mSQL (0.001023)[0m   [0;1mCOMMIT[0m
+Cookie set: auth_token=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+Redirected to http://0.0.0.0:3000/
+Completed in 0.04000 (25 reqs/sec) | DB: 0.00800 (19%) | 302 Found [http://0.0.0.0/logout]
+
+
+Processing PlacesController#index (for 127.0.0.1 at 2007-09-13 02:21:53) [GET]
+  Session ID: a6401920c115d7a1439998036691d726
+  Parameters: {"action"=>"index", "controller"=>"places"}
+  [4;35;1mPlace Columns (0.002998)[0m   [0mSHOW FIELDS FROM places[0m
+  [4;36;1mSQL (0.000574)[0m   [0;1mSELECT count(*) AS count_all FROM places [0m
+  [4;35;1mPlace Load (0.001305)[0m   [0mSELECT * FROM places ORDER BY created_at DESC LIMIT 0, 30[0m
+Rendering actionindexlayoutfalsecontent_typetext/html within layouts/mowawi
+Rendering places/index
+Rendered places/_place (0.00193)
+Rendered places/_place (0.00054)
+Rendered places/_place (0.00018)
+Rendered places/_place (0.00127)
+Rendered places/_place (0.00019)
+Completed in 0.10340 (9 reqs/sec) | Rendering: 0.08609 (83%) | DB: 0.00488 (4%) | 200 OK [http://0.0.0.0/]
+SessionController: missing default helper path session_helper
+
+
+Processing SessionController#new (for 127.0.0.1 at 2007-09-13 02:24:20) [GET]
+  Session ID: a6401920c115d7a1439998036691d726
+  Parameters: {"action"=>"new", "controller"=>"session"}
+Rendering  within layouts/mowawi
+Rendering session/new
+Completed in 0.00442 (226 reqs/sec) | Rendering: 0.00293 (66%) | DB: 0.00000 (0%) | 200 OK [http://0.0.0.0/session/new]
+SessionController: missing default helper path session_helper
+
+
+Processing SessionController#create (for 127.0.0.1 at 2007-09-13 02:24:31) [POST]
+  Session ID: a6401920c115d7a1439998036691d726
+  Parameters: {"commit"=>"Log in", "openid_url"=>"", "action"=>"create", "method"=>:get, "controller"=>"session", "login"=>"demo", "password"=>"demo"}
+  [4;36;1mUser Columns (0.002925)[0m   [0;1mSHOW FIELDS FROM users[0m
+  [4;35;1mUser Load (0.001043)[0m   [0mSELECT * FROM users WHERE (users.`login` = 'demo') LIMIT 1[0m
+  [4;36;1mSQL (0.000131)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.000325)[0m   [0mUPDATE users SET `created_at` = '2007-09-12 18:45:18', `login` = 'demo', `crypted_password` = 'fa10ad173eac3ae13a072ab35bf219aaf4880b38', `remember_token_expires_at` = NULL, `salt` = '75072eb8e0dbd86f382bbe880c50b3995c3678c2', `admin` = 0, `remember_token` = NULL, `identity_url` = NULL, `read_intro` = 0, `last_login_at` = NULL, `email` = 'demo@demo.com', `visits_count` = 0, `updated_at` = '2007-09-13 02:24:31' WHERE `id` = 4[0m
+  [4;36;1mSQL (0.001029)[0m   [0;1mCOMMIT[0m
+Redirected to http://0.0.0.0:3000/
+Completed in 0.02728 (36 reqs/sec) | DB: 0.00545 (19%) | 302 Found [http://0.0.0.0/session]
+
+
+Processing PlacesController#index (for 127.0.0.1 at 2007-09-13 02:24:31) [GET]
+  Session ID: a6401920c115d7a1439998036691d726
+  Parameters: {"action"=>"index", "controller"=>"places"}
+  [4;35;1mPlace Columns (0.003138)[0m   [0mSHOW FIELDS FROM places[0m
+  [4;36;1mSQL (0.000367)[0m   [0;1mSELECT count(*) AS count_all FROM places [0m
+  [4;35;1mPlace Load (0.001035)[0m   [0mSELECT * FROM places ORDER BY created_at DESC LIMIT 0, 30[0m
+Rendering actionindexlayoutfalsecontent_typetext/html within layouts/mowawi
+Rendering places/index
+  [4;36;1mUser Columns (0.003580)[0m   [0;1mSHOW FIELDS FROM users[0m
+  [4;35;1mUser Load (0.002138)[0m   [0mSELECT * FROM users WHERE (users.`id` = 4) LIMIT 1[0m
+Rendered places/_place (0.00240)
+Rendered places/_place (0.00085)
+Rendered places/_place (0.00032)
+Rendered places/_place (0.00186)
+Rendered places/_place (0.00026)
+Completed in 0.05331 (18 reqs/sec) | Rendering: 0.03231 (60%) | DB: 0.01026 (19%) | 200 OK [http://0.0.0.0/]
+
+
+Processing PlacesController#new (for 127.0.0.1 at 2007-09-13 02:24:35) [GET]
+  Session ID: a6401920c115d7a1439998036691d726
+  Parameters: {"action"=>"new", "controller"=>"places"}
+  [4;36;1mUser Columns (0.002980)[0m   [0;1mSHOW FIELDS FROM users[0m
+  [4;35;1mUser Load (0.001152)[0m   [0mSELECT * FROM users WHERE (users.`id` = 4) LIMIT 1[0m
+  [4;36;1mPlace Columns (0.002798)[0m   [0;1mSHOW FIELDS FROM places[0m
+Rendering  within layouts/mowawi
+Rendering places/new
+Completed in 0.04019 (24 reqs/sec) | Rendering: 0.00621 (15%) | DB: 0.00693 (17%) | 200 OK [http://0.0.0.0/places/new]
+
+
+Processing PlacesController#create (for 127.0.0.1 at 2007-09-13 02:24:57) [POST]
+  Session ID: a6401920c115d7a1439998036691d726
+  Parameters: {"place"=>{"title"=>"Mum's House", "lng"=>"", "description"=>"It's home", "telephone"=>"02890287955", "address"=>"BT100BD", "lat"=>""}, "commit"=>"Create", "action"=>"create", "controller"=>"places"}
+  [4;35;1mUser Columns (0.003985)[0m   [0mSHOW FIELDS FROM users[0m
+  [4;36;1mUser Load (0.001413)[0m   [0;1mSELECT * FROM users WHERE (users.`id` = 4) LIMIT 1[0m
+  [4;35;1mPlace Columns (0.003748)[0m   [0mSHOW FIELDS FROM places[0m
+  [4;36;1mSQL (0.000186)[0m   [0;1mBEGIN[0m
+Google geocoding. Address: BT100BD. Result: <?xml version="1.0" encoding="UTF-8"?><kml xmlns="http://earth.google.com/kml/2.0"><Response><name>BT100BD</name><Status><code>200</code><request>geocode</request></Status><Placemark id="p1"><address>Belfast, BT10 0BD, UK</address><AddressDetails Accuracy="5" xmlns="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0"><Country><CountryNameCode>GB</CountryNameCode><AdministrativeArea><AdministrativeAreaName>Northern Ireland</AdministrativeAreaName><Locality><LocalityName>Belfast</LocalityName><PostalCode><PostalCodeNumber>BT10 0BD</PostalCodeNumber></PostalCode></Locality></AdministrativeArea></Country></AddressDetails><Point><coordinates>-5.983060,54.561924,0</coordinates></Point></Placemark></Response></kml>
+  [4;35;1mSQL (0.000411)[0m   [0mINSERT INTO places (`updated_at`, `title`, `lng`, `description`, `telephone`, `user_id`, `address`, `lat`, `created_at`) VALUES('2007-09-13 02:24:57', 'Mum\'s House', '-5.98306', 'It\'s home', '02890287955', 4, 'BT100BD', '54.561924', '2007-09-13 02:24:57')[0m
+  [4;36;1mSQL (0.001475)[0m   [0;1mCOMMIT[0m
+Redirected to http://0.0.0.0:3000/places/15-Mum%27s+House
+Completed in 0.49764 (2 reqs/sec) | DB: 0.01122 (2%) | 302 Found [http://0.0.0.0/places]
+
+
+Processing PlacesController#show (for 127.0.0.1 at 2007-09-13 02:24:58) [GET]
+  Session ID: a6401920c115d7a1439998036691d726
+  Parameters: {"action"=>"show", "id"=>"15-Mum's House", "controller"=>"places"}
+  [4;35;1mPlace Columns (0.003373)[0m   [0mSHOW FIELDS FROM places[0m
+  [4;36;1mPlace Load (0.001052)[0m   [0;1mSELECT * FROM places WHERE (places.`id` = 15) [0m
+  [4;35;1mPlace Load (0.001349)[0m   [0mSELECT *, (ACOS(COS(0.952285220022915)*COS(-0.104424096344372)*COS(RADIANS(places.lat))*COS(RADIANS(places.lng))+
+ COS(0.952285220022915)*SIN(-0.104424096344372)*COS(RADIANS(places.lat))*SIN(RADIANS(places.lng))+
+ SIN(0.952285220022915)*SIN(RADIANS(places.lat)))*6376.77271)
+ AS distance FROM places WHERE (places.lat>54.5169986262108 AND places.lat<54.6068493737892 AND places.lng>-6.06054118968283 AND places.lng<-5.90557881031717 AND (ACOS(COS(0.952285220022915)*COS(-0.104424096344372)*COS(RADIANS(places.lat))*COS(RADIANS(places.lng))+
+ COS(0.952285220022915)*SIN(-0.104424096344372)*COS(RADIANS(places.lat))*SIN(RADIANS(places.lng))+
+ SIN(0.952285220022915)*SIN(RADIANS(places.lat)))*6376.77271)
+ <= 5) [0m
+  [4;36;1mPhoto Load (0.001034)[0m   [0;1mSELECT * FROM photos WHERE (photos.place_id = 15) [0m
+Rendering actionshowlayoutfalsecontent_typetext/html within layouts/mowawi
+Rendering places/show
+  [4;35;1mUser Columns (0.003245)[0m   [0mSHOW FIELDS FROM users[0m
+  [4;36;1mUser Load (0.001059)[0m   [0;1mSELECT * FROM users WHERE (users.`id` = 4) LIMIT 1[0m
+Completed in 0.07670 (13 reqs/sec) | Rendering: 0.02347 (30%) | DB: 0.01111 (14%) | 200 OK [http://0.0.0.0/places/15-Mum%27s+House]
+
+
+Processing PlacesController#show (for 127.0.0.1 at 2007-09-13 02:25:27) [GET]
+  Session ID: a6401920c115d7a1439998036691d726
+  Parameters: {"action"=>"show", "id"=>"15-Mum's House", "controller"=>"places"}
+  [4;35;1mPlace Columns (0.003399)[0m   [0mSHOW FIELDS FROM places[0m
+  [4;36;1mPlace Load (0.001260)[0m   [0;1mSELECT * FROM places WHERE (places.`id` = 15) [0m
+  [4;35;1mPlace Load (0.001243)[0m   [0mSELECT *, (ACOS(COS(0.952285220022915)*COS(-0.104424096344372)*COS(RADIANS(places.lat))*COS(RADIANS(places.lng))+
+ COS(0.952285220022915)*SIN(-0.104424096344372)*COS(RADIANS(places.lat))*SIN(RADIANS(places.lng))+
+ SIN(0.952285220022915)*SIN(RADIANS(places.lat)))*6376.77271)
+ AS distance FROM places WHERE (places.lat>54.5169986262108 AND places.lat<54.6068493737892 AND places.lng>-6.06054118968283 AND places.lng<-5.90557881031717 AND (ACOS(COS(0.952285220022915)*COS(-0.104424096344372)*COS(RADIANS(places.lat))*COS(RADIANS(places.lng))+
+ COS(0.952285220022915)*SIN(-0.104424096344372)*COS(RADIANS(places.lat))*SIN(RADIANS(places.lng))+
+ SIN(0.952285220022915)*SIN(RADIANS(places.lat)))*6376.77271)
+ <= 5) [0m
+  [4;36;1mPhoto Load (0.001224)[0m   [0;1mSELECT * FROM photos WHERE (photos.place_id = 15) [0m
+Rendering actionshowlayoutfalsecontent_typetext/html within layouts/mowawi
+Rendering places/show
+  [4;35;1mUser Columns (0.003196)[0m   [0mSHOW FIELDS FROM users[0m
+  [4;36;1mUser Load (0.001209)[0m   [0;1mSELECT * FROM users WHERE (users.`id` = 4) LIMIT 1[0m
+Completed in 0.08073 (12 reqs/sec) | Rendering: 0.02621 (32%) | DB: 0.01153 (14%) | 200 OK [http://0.0.0.0/places/15-Mum%27s+House]
+
+
+Processing PlacesController#show (for 127.0.0.1 at 2007-09-13 02:26:28) [GET]
+  Session ID: a6401920c115d7a1439998036691d726
+  Parameters: {"action"=>"show", "id"=>"15-Mum's House", "controller"=>"places"}
+  [4;35;1mPlace Columns (0.002792)[0m   [0mSHOW FIELDS FROM places[0m
+  [4;36;1mPlace Load (0.000962)[0m   [0;1mSELECT * FROM places WHERE (places.`id` = 15) [0m
+  [4;35;1mPlace Load (0.001041)[0m   [0mSELECT *, (ACOS(COS(0.952285220022915)*COS(-0.104424096344372)*COS(RADIANS(places.lat))*COS(RADIANS(places.lng))+
+ COS(0.952285220022915)*SIN(-0.104424096344372)*COS(RADIANS(places.lat))*SIN(RADIANS(places.lng))+
+ SIN(0.952285220022915)*SIN(RADIANS(places.lat)))*6376.77271)
+ AS distance FROM places WHERE (places.lat>54.5169986262108 AND places.lat<54.6068493737892 AND places.lng>-6.06054118968283 AND places.lng<-5.90557881031717 AND (ACOS(COS(0.952285220022915)*COS(-0.104424096344372)*COS(RADIANS(places.lat))*COS(RADIANS(places.lng))+
+ COS(0.952285220022915)*SIN(-0.104424096344372)*COS(RADIANS(places.lat))*SIN(RADIANS(places.lng))+
+ SIN(0.952285220022915)*SIN(RADIANS(places.lat)))*6376.77271)
+ <= 5) [0m
+  [4;36;1mPhoto Load (0.000969)[0m   [0;1mSELECT * FROM photos WHERE (photos.place_id = 15) [0m
+Rendering actionshowlayoutfalsecontent_typetext/html within layouts/mowawi
+Rendering places/show
+  [4;35;1mUser Columns (0.003984)[0m   [0mSHOW FIELDS FROM users[0m
+  [4;36;1mUser Load (0.001285)[0m   [0;1mSELECT * FROM users WHERE (users.`id` = 4) LIMIT 1[0m
+Completed in 0.07237 (13 reqs/sec) | Rendering: 0.02520 (34%) | DB: 0.01103 (15%) | 200 OK [http://0.0.0.0/places/15-Mum%27s+House]
+
+
+Processing PlacesController#show (for 127.0.0.1 at 2007-09-13 02:26:50) [GET]
+  Session ID: a6401920c115d7a1439998036691d726
+  Parameters: {"action"=>"show", "id"=>"15-Mum's House", "controller"=>"places"}
+  [4;35;1mPlace Columns (0.002940)[0m   [0mSHOW FIELDS FROM places[0m
+  [4;36;1mPlace Load (0.001021)[0m   [0;1mSELECT * FROM places WHERE (places.`id` = 15) [0m
+  [4;35;1mPlace Load (0.002445)[0m   [0mSELECT *, (ACOS(COS(0.952285220022915)*COS(-0.104424096344372)*COS(RADIANS(places.lat))*COS(RADIANS(places.lng))+
+ COS(0.952285220022915)*SIN(-0.104424096344372)*COS(RADIANS(places.lat))*SIN(RADIANS(places.lng))+
+ SIN(0.952285220022915)*SIN(RADIANS(places.lat)))*6376.77271)
+ AS distance FROM places WHERE (places.lat>54.5169986262108 AND places.lat<54.6068493737892 AND places.lng>-6.06054118968283 AND places.lng<-5.90557881031717 AND (ACOS(COS(0.952285220022915)*COS(-0.104424096344372)*COS(RADIANS(places.lat))*COS(RADIANS(places.lng))+
+ COS(0.952285220022915)*SIN(-0.104424096344372)*COS(RADIANS(places.lat))*SIN(RADIANS(places.lng))+
+ SIN(0.952285220022915)*SIN(RADIANS(places.lat)))*6376.77271)
+ <= 5) [0m
+  [4;36;1mPhoto Load (0.000968)[0m   [0;1mSELECT * FROM photos WHERE (photos.place_id = 15) [0m
+Rendering actionshowlayoutfalsecontent_typetext/html within layouts/mowawi
+Rendering places/show
+  [4;35;1mUser Columns (0.004397)[0m   [0mSHOW FIELDS FROM users[0m
+  [4;36;1mUser Load (0.001374)[0m   [0;1mSELECT * FROM users WHERE (users.`id` = 4) LIMIT 1[0m
+Completed in 0.15223 (6 reqs/sec) | Rendering: 0.09871 (64%) | DB: 0.01315 (8%) | 200 OK [http://0.0.0.0/places/15-Mum%27s+House]
+SessionController: missing default helper path session_helper
+
+
+Processing SessionController#destroy (for 127.0.0.1 at 2007-09-13 02:28:11) [DELETE]
+  Session ID: a6401920c115d7a1439998036691d726
+  Parameters: {"_method"=>"delete", "action"=>"destroy", "controller"=>"session"}
+  [4;35;1mUser Columns (0.003443)[0m   [0mSHOW FIELDS FROM users[0m
+  [4;36;1mUser Load (0.001156)[0m   [0;1mSELECT * FROM users WHERE (users.`id` = 4) LIMIT 1[0m
+  [4;35;1mSQL (0.000134)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.000388)[0m   [0;1mUPDATE users SET `created_at` = '2007-09-12 18:45:18', `login` = 'demo', `crypted_password` = 'fa10ad173eac3ae13a072ab35bf219aaf4880b38', `remember_token_expires_at` = NULL, `salt` = '75072eb8e0dbd86f382bbe880c50b3995c3678c2', `admin` = 0, `remember_token` = NULL, `identity_url` = NULL, `read_intro` = 0, `last_login_at` = NULL, `email` = 'demo@demo.com', `visits_count` = 0, `updated_at` = '2007-09-13 02:28:11' WHERE `id` = 4[0m
+  [4;35;1mSQL (0.000849)[0m   [0mCOMMIT[0m
+Cookie set: auth_token=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+Redirected to http://0.0.0.0:3000/
+Completed in 0.03865 (25 reqs/sec) | DB: 0.00597 (15%) | 302 Found [http://0.0.0.0/logout]
+
+
+Processing PlacesController#index (for 127.0.0.1 at 2007-09-13 02:28:12) [GET]
+  Session ID: e71e771605a9ac960971d26254c4068e
+  Parameters: {"action"=>"index", "controller"=>"places"}
+  [4;36;1mPlace Columns (0.002817)[0m   [0;1mSHOW FIELDS FROM places[0m
+  [4;35;1mSQL (0.000338)[0m   [0mSELECT count(*) AS count_all FROM places [0m
+  [4;36;1mPlace Load (0.001062)[0m   [0;1mSELECT * FROM places ORDER BY created_at DESC LIMIT 0, 30[0m
+Rendering actionindexlayoutfalsecontent_typetext/html within layouts/mowawi
+Rendering places/index
+Rendered places/_place (0.00151)
+Rendered places/_place (0.00058)
+Rendered places/_place (0.00050)
+Rendered places/_place (0.00018)
+Rendered places/_place (0.00141)
+Rendered places/_place (0.00020)
+Completed in 0.02206 (45 reqs/sec) | Rendering: 0.00828 (37%) | DB: 0.00422 (19%) | 200 OK [http://0.0.0.0/]
+SessionController: missing default helper path session_helper
+
+
+Processing SessionController#new (for 127.0.0.1 at 2007-09-13 02:28:13) [GET]
+  Session ID: e71e771605a9ac960971d26254c4068e
+  Parameters: {"action"=>"new", "controller"=>"session"}
+Rendering  within layouts/mowawi
+Rendering session/new
+Completed in 0.00341 (293 reqs/sec) | Rendering: 0.00237 (69%) | DB: 0.00000 (0%) | 200 OK [http://0.0.0.0/session/new]
+SessionController: missing default helper path session_helper
+
+
+Processing SessionController#create (for 127.0.0.1 at 2007-09-13 02:28:18) [POST]
+  Session ID: e71e771605a9ac960971d26254c4068e
+  Parameters: {"commit"=>"Log in", "openid_url"=>"davidjrice.myopenid.com", "action"=>"create", "method"=>:get, "controller"=>"session", "login"=>"", "password"=>""}
+  [4;35;1mOpenIdAuthentication::Nonce Columns (0.003239)[0m   [0mSHOW FIELDS FROM open_id_authentication_nonces[0m
+  [4;36;1mOpenIdAuthentication::Nonce Load (0.000585)[0m   [0;1mSELECT * FROM open_id_authentication_nonces WHERE (open_id_authentication_nonces.`nonce` = 'N9ZnEINQ') LIMIT 1[0m
+  [4;35;1mSQL (0.000214)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000346)[0m   [0;1mINSERT INTO open_id_authentication_nonces (`created`, `nonce`) VALUES(1189646899, 'N9ZnEINQ')[0m
+  [4;35;1mSQL (0.000894)[0m   [0mCOMMIT[0m
+  [4;36;1mOpenIdAuthentication::Association Columns (0.002750)[0m   [0;1mSHOW FIELDS FROM open_id_authentication_associations[0m
+  [4;35;1mOpenIdAuthentication::Association Load (0.000866)[0m   [0mSELECT * FROM open_id_authentication_associations WHERE (open_id_authentication_associations.`server_url` = 'http://www.myopenid.com/server') [0m
+Redirected to http://www.myopenid.com/server?openid.mode=checkid_setup&openid.return_to=http%3A%2F%2F0.0.0.0%3A3000%2Fsession%3Fopen_id_complete%3D1%26nonce%3DN9ZnEINQ%26nonce%3DN9ZnEINQ&openid.sreg.required=nickname%2Cemail&openid.trust_root=http%3A%2F%2F0.0.0.0%3A3000%2F&openid.identity=http%3A%2F%2Fdavidjrice.myopenid.com%2F&openid.assoc_handle=%7BHMAC-SHA1%7D%7B46e3664b%7D%7BkPQOng%3D%3D%7D
+Completed in 1.07727 (0 reqs/sec) | DB: 0.00889 (0%) | 302 Found [http://0.0.0.0/session]
+SessionController: missing default helper path session_helper
+
+
+Processing SessionController#create (for 127.0.0.1 at 2007-09-13 02:28:20) [GET]
+  Session ID: e71e771605a9ac960971d26254c4068e
+  Parameters: {"openid.sreg.nickname"=>"davidjrice", "openid.mode"=>"id_res", "openid.return_to"=>"http://0.0.0.0:3000/session?open_id_complete=1&nonce=N9ZnEINQ&nonce=N9ZnEINQ", "openid.sig"=>"ZFypn6BDnrkrc170cBqdXTK965o=", "openid.op_endpoint"=>"http://www.myopenid.com/server", "openid.response_nonce"=>"2007-09-13T01:31:16ZrPTHQY", "action"=>"create", "method"=>:get, "openid.sreg.email"=>"me@davidjrice.co.uk", "controller"=>"session", "openid.identity"=>"http://davidjrice.myopenid.com/", "open_id_complete"=>"1", "nonce"=>"N9ZnEINQ", "openid.assoc_handle"=>"{HMAC-SHA1}{46e3664b}{kPQOng==}", "openid.signed"=>"assoc_handle,identity,mode,op_endpoint,response_nonce,return_to,signed,sreg.email,sreg.nickname"}
+  [4;36;1mOpenIdAuthentication::Association Load (0.001002)[0m   [0;1mSELECT * FROM open_id_authentication_associations WHERE (open_id_authentication_associations.`handle` = '{HMAC-SHA1}{46e3664b}{kPQOng==}' AND open_id_authentication_associations.`server_url` = 'http://www.myopenid.com/server') [0m
+  [4;35;1mOpenIdAuthentication::Nonce Load (0.000516)[0m   [0mSELECT * FROM open_id_authentication_nonces WHERE (open_id_authentication_nonces.`nonce` = 'N9ZnEINQ') LIMIT 1[0m
+  [4;36;1mSQL (0.000154)[0m   [0;1mBEGIN[0m
+  [4;35;1mOpenIdAuthentication::Nonce Destroy (0.000291)[0m   [0m DELETE FROM open_id_authentication_nonces
+ WHERE `id` = 4
+[0m
+  [4;36;1mSQL (0.000958)[0m   [0;1mCOMMIT[0m
+  [4;35;1mUser Columns (0.003062)[0m   [0mSHOW FIELDS FROM users[0m
+  [4;36;1mUser Load (0.001068)[0m   [0;1mSELECT * FROM users WHERE (users.`identity_url` = 'http://davidjrice.myopenid.com/') LIMIT 1[0m
+Redirected to http://0.0.0.0:3000/
+Completed in 0.03347 (29 reqs/sec) | DB: 0.00705 (21%) | 302 Found [http://0.0.0.0/session?open_id_complete=1&nonce=N9ZnEINQ&nonce=N9ZnEINQ&openid.assoc_handle=%7BHMAC-SHA1%7D%7B46e3664b%7D%7BkPQOng%3D%3D%7D&openid.identity=http%3A%2F%2Fdavidjrice.myopenid.com%2F&openid.mode=id_res&openid.op_endpoint=http%3A%2F%2Fwww.myopenid.com%2Fserver&openid.response_nonce=2007-09-13T01%3A31%3A16ZrPTHQY&openid.return_to=http%3A%2F%2F0.0.0.0%3A3000%2Fsession%3Fopen_id_complete%3D1%26nonce%3DN9ZnEINQ%26nonce%3DN9ZnEINQ&openid.sig=ZFypn6BDnrkrc170cBqdXTK965o%3D&openid.signed=assoc_handle%2Cidentity%2Cmode%2Cop_endpoint%2Cresponse_nonce%2Creturn_to%2Csigned%2Csreg.email%2Csreg.nickname&openid.sreg.email=me%40davidjrice.co.uk&openid.sreg.nickname=davidjrice]
+
+
+Processing PlacesController#index (for 127.0.0.1 at 2007-09-13 02:28:21) [GET]
+  Session ID: e71e771605a9ac960971d26254c4068e
+  Parameters: {"action"=>"index", "controller"=>"places"}
+  [4;35;1mPlace Columns (0.002685)[0m   [0mSHOW FIELDS FROM places[0m
+  [4;36;1mSQL (0.000346)[0m   [0;1mSELECT count(*) AS count_all FROM places [0m
+  [4;35;1mPlace Load (0.001165)[0m   [0mSELECT * FROM places ORDER BY created_at DESC LIMIT 0, 30[0m
+Rendering actionindexlayoutfalsecontent_typetext/html within layouts/mowawi
+Rendering places/index
+  [4;36;1mUser Columns (0.004367)[0m   [0;1mSHOW FIELDS FROM users[0m
+  [4;35;1mUser Load (0.001286)[0m   [0mSELECT * FROM users WHERE (users.`id` = 2) LIMIT 1[0m
+Rendered places/_place (0.00244)
+Rendered places/_place (0.00091)
+Rendered places/_place (0.00075)
+Rendered places/_place (0.00025)
+Rendered places/_place (0.00164)
+Rendered places/_place (0.00025)
+Completed in 0.05208 (19 reqs/sec) | Rendering: 0.03289 (63%) | DB: 0.00985 (18%) | 200 OK [http://0.0.0.0/]
+SessionController: missing default helper path session_helper
+
+
+Processing SessionController#destroy (for 127.0.0.1 at 2007-09-13 02:28:24) [DELETE]
+  Session ID: e71e771605a9ac960971d26254c4068e
+  Parameters: {"_method"=>"delete", "action"=>"destroy", "controller"=>"session"}
+  [4;36;1mUser Columns (0.004113)[0m   [0;1mSHOW FIELDS FROM users[0m
+  [4;35;1mUser Load (0.002472)[0m   [0mSELECT * FROM users WHERE (users.`id` = 2) LIMIT 1[0m
+  [4;36;1mSQL (0.000232)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.000616)[0m   [0mUPDATE users SET `created_at` = '2007-09-09 04:25:48', `login` = 'davidjrice', `crypted_password` = NULL, `remember_token_expires_at` = NULL, `salt` = NULL, `admin` = 1, `remember_token` = NULL, `identity_url` = 'http://davidjrice.myopenid.com/', `read_intro` = 0, `last_login_at` = NULL, `email` = 'me@davidjrice.co.uk', `visits_count` = 0, `updated_at` = '2007-09-13 02:28:24' WHERE `id` = 2[0m
+  [4;36;1mSQL (0.000918)[0m   [0;1mCOMMIT[0m
+Cookie set: auth_token=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+Redirected to http://0.0.0.0:3000/
+Completed in 0.12206 (8 reqs/sec) | DB: 0.00835 (6%) | 302 Found [http://0.0.0.0/logout]
+
+
+Processing PlacesController#index (for 127.0.0.1 at 2007-09-13 02:28:24) [GET]
+  Session ID: 16aea27cecdb19e4bae88058b185e6a6
+  Parameters: {"action"=>"index", "controller"=>"places"}
+  [4;35;1mPlace Columns (0.003375)[0m   [0mSHOW FIELDS FROM places[0m
+  [4;36;1mSQL (0.000434)[0m   [0;1mSELECT count(*) AS count_all FROM places [0m
+  [4;35;1mPlace Load (0.001395)[0m   [0mSELECT * FROM places ORDER BY created_at DESC LIMIT 0, 30[0m
+Rendering actionindexlayoutfalsecontent_typetext/html within layouts/mowawi
+Rendering places/index
+Rendered places/_place (0.00194)
+Rendered places/_place (0.00076)
+Rendered places/_place (0.00062)
+Rendered places/_place (0.00023)
+Rendered places/_place (0.00162)
+Rendered places/_place (0.00023)
+Completed in 0.02742 (36 reqs/sec) | Rendering: 0.01002 (36%) | DB: 0.00520 (18%) | 200 OK [http://0.0.0.0/]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2007-09-13 02:28:26) [GET]
+  Session ID: 16aea27cecdb19e4bae88058b185e6a6
+  Parameters: {"action"=>"new", "controller"=>"users"}
+  [4;36;1mUser Columns (0.003304)[0m   [0;1mSHOW FIELDS FROM users[0m
+Rendering  within layouts/mowawi
+Rendering users/new
+Rendered users/_form (0.00173)
+Completed in 0.02880 (34 reqs/sec) | Rendering: 0.00477 (16%) | DB: 0.00330 (11%) | 200 OK [http://0.0.0.0/users/new]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2007-09-13 02:28:36) [POST]
+  Session ID: 16aea27cecdb19e4bae88058b185e6a6
+  Parameters: {"user"=>{"password_confirmation"=>"monkey", "login"=>"monkey", "password"=>"monkey", "email"=>"monkey@monkey.com"}, "commit"=>"Sign up", "action"=>"create", "controller"=>"users"}
+  [4;35;1mUser Columns (0.004512)[0m   [0mSHOW FIELDS FROM users[0m
+  [4;36;1mSQL (0.003390)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.001292)[0m   [0mSELECT * FROM users WHERE (LOWER(users.login) = 'monkey') LIMIT 1[0m
+  [4;36;1mUser Load (0.001191)[0m   [0;1mSELECT * FROM users WHERE (LOWER(users.email) = 'monkey@monkey.com') LIMIT 1[0m
+  [4;35;1mSQL (0.000254)[0m   [0mCOMMIT[0m
+Rendering actionnewlayoutfalse within layouts/mowawi
+Rendering users/new
+Rendered users/_form (0.00088)
+Completed in 0.04433 (22 reqs/sec) | Rendering: 0.00448 (10%) | DB: 0.01064 (23%) | 200 OK [http://0.0.0.0/users]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2007-09-13 02:28:44) [POST]
+  Session ID: 16aea27cecdb19e4bae88058b185e6a6
+  Parameters: {"user"=>{"password_confirmation"=>"monkey", "login"=>"monkeyss2", "password"=>"monkey", "email"=>"monkey@monkey.com"}, "commit"=>"Sign up", "action"=>"create", "controller"=>"users"}
+  [4;36;1mUser Columns (0.004576)[0m   [0;1mSHOW FIELDS FROM users[0m
+  [4;35;1mSQL (0.000225)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.001330)[0m   [0;1mSELECT * FROM users WHERE (LOWER(users.login) = 'monkeyss2') LIMIT 1[0m
+  [4;35;1mUser Load (0.001563)[0m   [0mSELECT * FROM users WHERE (LOWER(users.email) = 'monkey@monkey.com') LIMIT 1[0m
+  [4;36;1mSQL (0.000202)[0m   [0;1mCOMMIT[0m
+Rendering actionnewlayoutfalse within layouts/mowawi
+Rendering users/new
+Rendered users/_form (0.00082)
+Completed in 0.03760 (26 reqs/sec) | Rendering: 0.00419 (11%) | DB: 0.00790 (20%) | 200 OK [http://0.0.0.0/users]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2007-09-13 02:28:50) [POST]
+  Session ID: 16aea27cecdb19e4bae88058b185e6a6
+  Parameters: {"user"=>{"password_confirmation"=>"monkey", "login"=>"monkeyss2", "password"=>"monkey", "email"=>"monkey@monke2y.com"}, "commit"=>"Sign up", "action"=>"create", "controller"=>"users"}
+  [4;35;1mUser Columns (0.004951)[0m   [0mSHOW FIELDS FROM users[0m
+  [4;36;1mSQL (0.000217)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.001263)[0m   [0mSELECT * FROM users WHERE (LOWER(users.login) = 'monkeyss2') LIMIT 1[0m
+  [4;36;1mUser Load (0.001116)[0m   [0;1mSELECT * FROM users WHERE (LOWER(users.email) = 'monkey@monke2y.com') LIMIT 1[0m
+  [4;35;1mSQL (0.000351)[0m   [0mINSERT INTO users (`last_login_at`, `salt`, `updated_at`, `crypted_password`, `visits_count`, `read_intro`, `admin`, `remember_token_expires_at`, `identity_url`, `remember_token`, `login`, `created_at`, `email`) VALUES(NULL, 'fb7af26336e592d529c4ec1689ce9af5c37a4625', '2007-09-13 02:28:50', '94c71f62e374d6226dcc288fac3c51dccd7effe5', 0, 0, 0, NULL, NULL, NULL, 'monkeyss2', '2007-09-13 02:28:50', 'monkey@monke2y.com')[0m
+  [4;36;1mSQL (0.000915)[0m   [0;1mCOMMIT[0m
+  [4;35;1mUser Load (0.001739)[0m   [0mSELECT * FROM users WHERE (users.`login` = 'monkeyss2') LIMIT 1[0m
+Redirected to http://0.0.0.0:3000/users/monkeyss2
+Completed in 0.03698 (27 reqs/sec) | DB: 0.01055 (28%) | 302 Found [http://0.0.0.0/users]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2007-09-13 02:28:51) [GET]
+  Session ID: 16aea27cecdb19e4bae88058b185e6a6
+  Parameters: {"action"=>"show", "id"=>"monkeyss2", "controller"=>"users"}
+  [4;36;1mUser Columns (0.004207)[0m   [0;1mSHOW FIELDS FROM users[0m
+  [4;35;1mUser Load (0.001499)[0m   [0mSELECT * FROM users WHERE (users.`login` = 'monkeyss2') LIMIT 1[0m
+Rendering actionshowlayoutfalsecontent_typetext/html within layouts/mowawi
+Rendering users/show
+  [4;36;1mPlace Load (0.000876)[0m   [0;1mSELECT * FROM places WHERE (places.user_id = 10) [0m
+  [4;35;1mUser Load (0.000954)[0m   [0mSELECT * FROM users WHERE (users.`id` = 10) LIMIT 1[0m
+Completed in 0.04105 (24 reqs/sec) | Rendering: 0.01347 (32%) | DB: 0.00754 (18%) | 200 OK [http://0.0.0.0/users/monkeyss2]
+
+
+Processing UsersController#destroy (for 127.0.0.1 at 2007-09-13 02:28:58) [DELETE]
+  Session ID: 16aea27cecdb19e4bae88058b185e6a6
+  Parameters: {"_method"=>"delete", "action"=>"destroy", "id"=>"monkeyss2", "controller"=>"users"}
+  [4;36;1mUser Columns (0.003067)[0m   [0;1mSHOW FIELDS FROM users[0m
+  [4;35;1mUser Load (0.001149)[0m   [0mSELECT * FROM users WHERE (users.`id` = 10) LIMIT 1[0m
+  [4;36;1mUser Load (0.001643)[0m   [0;1mSELECT * FROM users WHERE (users.`login` = 'monkeyss2') LIMIT 1[0m
+  [4;35;1mSQL (0.000177)[0m   [0mBEGIN[0m
+  [4;36;1mUser Destroy (0.000351)[0m   [0;1m DELETE FROM users
+ WHERE `id` = 10
+[0m
+  [4;35;1mSQL (0.000838)[0m   [0mCOMMIT[0m
+Redirected to http://0.0.0.0:3000/users
+Completed in 0.10273 (9 reqs/sec) | DB: 0.00723 (7%) | 302 Found [http://0.0.0.0/users/monkeyss2]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2007-09-13 02:28:59) [GET]
+  Session ID: 16aea27cecdb19e4bae88058b185e6a6
+  Parameters: {"action"=>"index", "controller"=>"users"}
+  [4;36;1mUser Load (0.001784)[0m   [0;1mSELECT * FROM users [0m
+Rendering actionindexlayoutfalsecontent_typetext/html within layouts/mowawi
+Rendering users/index
+  [4;35;1mUser Columns (0.003404)[0m   [0mSHOW FIELDS FROM users[0m
+  [4;36;1mUser Load (0.001282)[0m   [0;1mSELECT * FROM users WHERE (users.`id` = 10) LIMIT 1[0m
+Completed in 0.03765 (26 reqs/sec) | Rendering: 0.00768 (20%) | DB: 0.00647 (17%) | 200 OK [http://0.0.0.0/users]
+SessionController: missing default helper path session_helper
+
+
+Processing SessionController#new (for 127.0.0.1 at 2007-09-13 02:29:02) [GET]
+  Session ID: 16aea27cecdb19e4bae88058b185e6a6
+  Parameters: {"action"=>"new", "controller"=>"session"}
+Rendering  within layouts/mowawi
+Rendering session/new
+  [4;35;1mUser Columns (0.004805)[0m   [0mSHOW FIELDS FROM users[0m
+  [4;36;1mUser Load (0.001335)[0m   [0;1mSELECT * FROM users WHERE (users.`id` = 10) LIMIT 1[0m
+Completed in 0.11035 (9 reqs/sec) | Rendering: 0.10275 (93%) | DB: 0.00614 (5%) | 200 OK [http://0.0.0.0/session/new]
+SessionController: missing default helper path session_helper
+
+
+Processing SessionController#new (for 127.0.0.1 at 2007-09-13 02:34:51) [GET]
+  Session ID: 16aea27cecdb19e4bae88058b185e6a6
+  Parameters: {"action"=>"new", "controller"=>"session"}
+Rendering  within layouts/mowawi
+Rendering session/new
+  [4;35;1mUser Columns (0.003309)[0m   [0mSHOW FIELDS FROM users[0m
+  [4;36;1mUser Load (0.001047)[0m   [0;1mSELECT * FROM users WHERE (users.`id` = 10) LIMIT 1[0m
+Completed in 0.02669 (37 reqs/sec) | Rendering: 0.02125 (79%) | DB: 0.00436 (16%) | 200 OK [http://0.0.0.0/session/new]
+
+
+Processing PlacesController#index (for 127.0.0.1 at 2007-09-14 10:43:49) [GET]
+  Session ID: a0991f4590f0d159b8630589f7f0b676
+  Parameters: {"action"=>"index", "controller"=>"places"}
+  [4;36;1mSQL (0.000183)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mPlace Columns (0.154424)[0m   [0mSHOW FIELDS FROM places[0m
+  [4;36;1mSQL (0.001736)[0m   [0;1mSELECT count(*) AS count_all FROM places [0m
+  [4;35;1mPlace Load (0.025801)[0m   [0mSELECT * FROM places ORDER BY created_at DESC LIMIT 0, 30[0m
+Rendering actionindexlayoutfalsecontent_typetext/html within layouts/mowawi
+Rendering places/index
+Rendered places/_place (0.00386)
+Rendered places/_place (0.00068)
+Rendered places/_place (0.00062)
+Rendered places/_place (0.00022)
+Rendered places/_place (0.00154)
+Rendered places/_place (0.00024)
+Completed in 0.28826 (3 reqs/sec) | Rendering: 0.03678 (12%) | DB: 0.18214 (63%) | 200 OK [http://0.0.0.0/]
+
+
+Processing PlacesController#index (for 127.0.0.1 at 2007-09-14 10:47:09) [GET]
+  Session ID: a0991f4590f0d159b8630589f7f0b676
+  Parameters: {"action"=>"index", "controller"=>"places"}
+  [4;36;1mPlace Columns (0.014718)[0m   [0;1mSHOW FIELDS FROM places[0m
+  [4;35;1mSQL (0.004039)[0m   [0mSELECT count(*) AS count_all FROM places [0m
+  [4;36;1mPlace Load (0.001339)[0m   [0;1mSELECT * FROM places ORDER BY created_at DESC LIMIT 0, 30[0m
+Rendering actionindexlayoutfalsecontent_typetext/html within layouts/mowawi
+Rendering places/index
+Rendered places/_place (0.00177)
+Rendered places/_place (0.00060)
+Rendered places/_place (0.00061)
+Rendered places/_place (0.00022)
+Rendered places/_place (0.00147)
+Rendered places/_place (0.00026)
+Completed in 0.05060 (19 reqs/sec) | Rendering: 0.01978 (39%) | DB: 0.02010 (39%) | 200 OK [http://0.0.0.0/]

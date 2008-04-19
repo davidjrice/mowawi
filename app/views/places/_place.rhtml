@@ -1,0 +1,4 @@
+<li id="place_<%= place.id %>">
+  <span class="title"><%= link_to place.title, place_path(place) %></span>
+  <span class="description"><%= truncate place.description, 100, "..." %></span>
+</li>

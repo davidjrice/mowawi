@@ -1,0 +1,12 @@
+<h1>Editing photo</h1>
+
+<%= error_messages_for :photo %>
+
+<% form_for(:photo, :url => photo_path(@place,@photo), :html => { :method => :put }) do |f| %>
+  <p>
+    <%= submit_tag "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', photo_path(@place,@photo) %> |
+<%= link_to 'Back', photos_path(@place) %>

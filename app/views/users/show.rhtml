@@ -1,0 +1,18 @@
+<h2><%=h @user.login %></h2>
+
+<h3>Places created by <%= h @user.login %></h3>
+<%- if @user.places -%>
+<ul>
+  <%- @user.places.each do |place| -%>
+  <li><%= link_to place.title, place_path(place) %></li>
+  <%- end -%>
+</ul>
+<%- else -%>
+<p>No places created</p>
+<%- end -%>
+
+<%- if logged_in? && @user == current_user -%>
+<%= link_to 'Destroy Account', user_path(@user), :confirm => 'Are you sure?', :method => :delete %> |
+<%= link_to 'Edit', edit_user_path(@user) %> |
+<%- end -%>
+<%= link_to 'List Users', users_path %>

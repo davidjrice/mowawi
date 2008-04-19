@@ -1,0 +1,18 @@
+<h2>Editing place</h2>
+
+<%= error_messages_for :place %>
+
+<% ordered_list_form_for(:place, :url => place_path(@place), :html => { :method => :put }) do |f| %>
+  <%= f.text_field :title %>
+  <%= f.text_field :address, :hint => " we will attempt to find co-ordinates for this address" %>
+  <%= f.text_area :description, :rows => 5, :hint => " optional" %>
+  <%= f.text_field :telephone, :hint => " optional" %>
+  <%= f.text_field :lat, :hint => " you can override geocoding by entering your own co-ordinates" %>
+  <%= f.text_field :lng %>
+  <li><%= submit_tag "Update" %></li>
+<% end %>
+
+<%= link_to 'Show', place_path(@place) %> |
+<%= link_to 'Back', places_path %>
+
+  

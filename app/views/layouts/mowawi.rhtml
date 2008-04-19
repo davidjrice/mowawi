@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Mowawi</title>
+  <%= stylesheet_link_tag 'reset' %>
+  <%= stylesheet_link_tag 'screen' %>
+  <%= javascript_include_tag 'prototype', 'lowpro', 'remote', 'intro' %>
+  <%= yield :header %>
+</head>
+
+<body>
+  <div id="header">
+    <h1><a href="/"><span>MOWAWI</span></a></h1><p>Mobile Web Waypointing Wiki</p>
+    <div id="login">
+    <% if logged_in? %>
+      <%= gravatar_for current_user %>
+      <p>Logged in as <%= link_to current_user.login, user_path(current_user) %></p>
+      <p><%= link_to "Logout", logout_path, :method => :delete %></p>
+    <% else %>
+      <p>You are not logged in!</p>
+      <p><%= link_to "Login", new_session_path %> or <%= link_to "Signup", new_user_path %></p>
+    <% end %>
+    </div>
+  </div>
+  <% if flash.any? %>
+    <div id="flash"><%= flash[:notice] %></div><% flash.clear %>
+  <% end %>
+  <div id="page">
+    <div id="content">
+      <%- unless logged_in? -%>
+        <p id="intro">Quickly try out Mowawi with the demo account.<br/> login: demo<br/> password: demo </p>
+      <%- end -%>
+      <%- unless logged_in? && current_user.read_intro? -%>
+        <p id="intro">Mowawi is an application created by <%= link_to "David Rice", "http://www.davidjrice.co.uk" %> 
+          in 48 hours as part of the <%= link_to "Rails Rumble", "http://www.railsrumble.com" %> competition.
+        <span>It is a wiki style city framework which presents data in a way friendly to mobile devices.</span>
+        Probably a little too ambitious after losing the other team members to <%= link_to "other teams", "http://joglog.railsrumble.com" %>, sickness and work commitments... including 
+        our mobile device expert! But in the end I was rumbling for the fun :)
+        <%- if logged_in? -%>
+        <%= link_to "I've read this, hide it forever!", read_intro_path, :id => "hide_intro" %>
+        <%- end -%>
+        </p>
+      <%- end -%>
+      <%= yield %>
+    </div>
+  </div>
+</body>
+</html>

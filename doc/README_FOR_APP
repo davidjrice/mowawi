@@ -1,0 +1,22 @@
+# Gems Used
+
+http://rspec.rubyforge.org/download.html
+
+gem install rspec -v 1.0.8
+gem install ruby-openid --include-dependencies
+
+
+# Other
+
+YUI reset.css
+
+http://developer.yahoo.com/yui/reset/
+
+
+
+A user decides to add a "node".
+A node is a restaurant, a cinema, library, house, building, junction - it's a single point on a map.
+A user adds the name of this node, address, phone number, photo, details, etc, and lat/long.
+A user is told of other nodes in the immediate area, and on the "path" -this helps check the address details.
+A path is a street, river, path, lane, - it's a linear linking of nodes, it has a beginning and an end but is not a single point on a map.
+User confirms node addition.

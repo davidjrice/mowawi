@@ -1,0 +1,14 @@
+<h2>All Users</h2>
+
+<%- if @users.size > 0 -%>
+<ul>
+<% for user in @users %>
+<%- unless user.email.nil? && user.login.nil? -%>
+  <li><%= gravatar_for user %>
+      <%= link_to h(user.login), user_path(user) %></li>
+<% end %>
+<%- end -%>
+</ul>
+<%- else -%>
+<p>No Users</p>
+<%- end -%>

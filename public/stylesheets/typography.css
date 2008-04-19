@@ -1,0 +1,40 @@
+body {
+  font-size: 16px;
+  line-height: 1.375em;
+  margin: 0; padding: 0
+}
+
+h2 {
+  margin: 0;
+  font-size: 1.375em;
+  line-height: 1em;
+  margin-bottom: 1em;
+}
+h3 {
+  margin: 0;
+  font-size: 1.25em;
+  line-height: 1.1em;
+  margin-bottom: 1.1em;
+}
+h4 {
+  margin: 0;
+  font-size: 1.125em;
+  line-height: 1.2222222222222223em;
+  margin-bottom: 1.2222222222222223em;
+}
+p, ul, blockquote, pre, td, th, label {
+  margin: 0;
+  font-size: 1em;
+  line-height: 1.375em;
+  margin-bottom: 1.375em;
+}
+p.small {
+  margin: 0;
+  font-size: 0.875em;
+  line-height: 1.5714285714285714em;
+  margin-bottom: 1.5714285714285714em;
+}
+table {
+  border-collapse: collapse;
+  margin-bottom: 1.375em;
+}

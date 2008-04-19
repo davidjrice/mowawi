@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+     PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+  <head>
+    <title>mowawi.mobi</title>
+    <meta http-equiv="Cache-Control" content="no-cache" />
+    <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
+    <link media="handheld" type="text/css" href="../public/stylesheets/mobile.css" rel="stylesheet" />
+    <link media="screen,projection" type="text/css" href="../public/stylesheets/desktop.css" rel="stylesheet" />
+  </head>
+  <body>
+  <div id="page">
+  <div id="branding"></div>
+    <h1>Sample Node</h1>
+    <p class="category">Restaurant</p>
+    <address>29 <a href="/path/foo">Acacia Road</a>, <a href="/city">Anytown</a></address>
+    <p class="tel"><a href="tel:0123456789">0123456789</a></p>
+    <h2 class="notmobile">Nearby</h2>
+    <ul id="near" class="nav mobile">
+    <li><strong><a href="#near">Nearby</a></strong></li>
+    <li><a href="#also">See Also</a></li>
+    <li><a href="#map">Map</a></li>
+    <li><a href="#far">Not So Near</a></li>
+    </ul>
+
+    <p>details of what's nearby</p>
+
+    <h2 class="notmobile">See Also</h2>
+    <ul id="also" class="nav mobile">
+    <li><a href="#near">Nearby</a></li>
+    <li><strong><a href="#also">See Also</a></strong></li>
+    <li><a href="#map">Map</a></li>
+    <li><a href="#far">Not So Near</a></li>
+    </ul>
+
+    <p>details of what's popular in this category of node</p>
+
+    <h2 class="notmobile">Map</h2>
+    <ul id="map" class="nav mobile">
+    <li><a href="#near">Nearby</a></li>
+    <li><a href="#also">See Also</a></li>
+    <li><strong><a href="#map">Map</a></strong></li>
+    <li><a href="#far">Not So Near</a></li>
+    </ul>
+
+    <p>maybe a wee google map?</p>
+
+    <h2 class="notmobile">Not So Near</h2>
+    <ul id="far" class="nav mobile">
+    <li><a href="#near">Nearby</a></li>
+    <li><a href="#also">See Also</a></li>
+    <li><a href="#map">Map</a></li>
+    <li><strong><a href="#far">Not So Near</a></strong></li>
+    </ul>
+
+    <p>nodes that are just out of range but that might be worthwhile... the 500m to 1.5km radius</p>
+
+    <form>
+    <legend>search</legend>
+    <p><input type="text"/></p>
+    </form>
+    </div>
+  </body>
+</html>
